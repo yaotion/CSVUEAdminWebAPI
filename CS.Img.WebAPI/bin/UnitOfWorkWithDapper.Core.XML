@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UnitOfWorkWithDapper.Core</name>
+    </assembly>
+    <members>
+        <member name="T:UnitOfWorkWithDapper.Core.DapperContext">
+            <summary>
+            Represents a context to Dapper.NET
+            </summary>
+        </member>
+        <member name="T:UnitOfWorkWithDapper.Core.IContext">
+            <summary>
+            The interface of context.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.IContext.BeginTransaction">
+            <summary>
+            Begins transaction.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.IContext.Commit">
+            <summary>
+            Commits operations of transaction.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.IContext.Rollback">
+            <summary>
+            Rollbacks operations of transaction.
+            </summary>
+        </member>
+        <member name="P:UnitOfWorkWithDapper.Core.IContext.IsTransactionStarted">
+            <summary>
+            Indicates if transaction is started.
+            </summary>
+        </member>
+        <member name="F:UnitOfWorkWithDapper.Core.DapperContext._isTransactionStarted">
+            <summary>
+            Indicates if transaction is started.
+            </summary>
+        </member>
+        <member name="F:UnitOfWorkWithDapper.Core.DapperContext._connection">
+            <summary>
+            The connection object to database.
+            </summary>
+        </member>
+        <member name="F:UnitOfWorkWithDapper.Core.DapperContext._transaction">
+            <summary>
+            The transaction object to connection.
+            </summary>
+        </member>
+        <member name="F:UnitOfWorkWithDapper.Core.DapperContext._commandTimeout">
+            <summary>
+            The command timeout.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.CreateConnection">
+            <summary>
+            Creates connection object to database.
+            </summary>
+            <returns>The connection object.</returns>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.BeginTransaction">
+            <summary>
+            Begins transaction.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.Commit">
+            <summary>
+            Commits operations of transaction.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.Rollback">
+            <summary>
+            Rollbacks operations of transaction.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.Execute(System.String,System.Object,System.Data.CommandType)">
+            <summary>
+            Execute parameterized SQL.
+            </summary>
+            <param name="sql">The sql.</param>
+            <param name="param">The parameters.</param>
+            <param name="commandType">The command type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.ExecuteReader(System.String,System.Object,System.Data.CommandType)">
+            <summary>
+            Execute parameterized SQL and return an System.Data.IDataReader.
+            </summary>
+            <param name="sql">The sql.</param>
+            <param name="param">The parameters.</param>
+            <param name="commandType">The command type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.ExecuteScalar``1(System.String,System.Object,System.Data.CommandType)">
+            <summary>
+            Execute parameterized SQL that selects a single value.
+            </summary>
+            <param name="sql">The sql.</param>
+            <param name="param">The parameters.</param>
+            <param name="commandType">The command type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.Query``1(System.String,System.Object,System.Data.CommandType)">
+            <summary>
+            Executes a query, returning the data typed as per T
+            </summary>
+            <typeparam name="T">The type of entity</typeparam>
+            <param name="sql">The sql.</param>
+            <param name="param">The parameters.</param>
+            <param name="commandType">The command type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.DapperContext.Query``3(System.String,System.Func{``0,``1,``2},System.Object,System.String,System.Data.CommandType)">
+            <summary>
+            Maps a query to objects.
+            </summary>
+            <typeparam name="TFirst">The first type in the record set.</typeparam>
+            <typeparam name="TSecond">The second type in the record set.</typeparam>
+            <typeparam name="TReturn">The return type.</typeparam>
+            <param name="sql">The sql.</param>
+            <param name="map">The mapper of types.</param>
+            <param name="param">The parameters.</param>
+            <param name="splitOn">The Field we should split and read the second object from (default: id).</param>
+            <param name="commandType">The command type.</param>
+            <returns></returns>
+        </member>
+        <member name="P:UnitOfWorkWithDapper.Core.DapperContext.IsTransactionStarted">
+            <summary>
+            Indicates if transaction is started.
+            </summary>
+        </member>
+        <member name="T:UnitOfWorkWithDapper.Core.IUnitOfWork">
+            <summary>
+            The interface of unit of work.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.IUnitOfWork.SaveChanges">
+            <summary>
+            Save changes into context.
+            </summary>
+        </member>
+        <member name="T:UnitOfWorkWithDapper.Core.IUnitOfWorkFactory">
+            <summary>
+            The interface of factory of unit of work.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.IUnitOfWorkFactory.Create">
+            <summary>
+            Creates an unit of work.
+            </summary>
+            <returns>The unit of work.</returns>
+        </member>
+        <member name="T:UnitOfWorkWithDapper.Core.UnitOfWork">
+            <summary>
+            Represents an unit of work implementation.
+            </summary>
+        </member>
+        <member name="F:UnitOfWorkWithDapper.Core.UnitOfWork._context">
+            <summary>
+            The context object.
+            </summary>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.UnitOfWork.#ctor(UnitOfWorkWithDapper.Core.IContext)">
+            <summary>
+            Creates new unit of work instance, beginning a new transaction to the database.
+            </summary>
+            <param name="context">The context object.</param>
+        </member>
+        <member name="M:UnitOfWorkWithDapper.Core.UnitOfWork.SaveChanges">
+            <summary>
+            Save changes into context.
+            </summary>
+        </member>
+    </members>
+</doc>

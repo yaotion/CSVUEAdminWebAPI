@@ -1,0 +1,7 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebClient\bin\Debug\CS.Img.WebClient.exe
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebClient\bin\Debug\CS.Img.WebClient.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebClient\obj\Debug\CS.Img.WebClient.csprojResolveAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebClient\obj\Debug\CS.Img.WebClient.Properties.Resources.resources
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebClient\obj\Debug\CS.Img.WebClient.csproj.GenerateResource.Cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebClient\obj\Debug\CS.Img.WebClient.exe
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebClient\obj\Debug\CS.Img.WebClient.pdb

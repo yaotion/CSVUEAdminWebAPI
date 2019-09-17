@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.User</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.User.CSWebAPIRespLogin">
+            <summary>
+            临时Token类
+            </summary>
+        </member>
+        <member name="F:CS.Img.User.CSWebAPIRespLogin.token">
+            <summary>
+            token值
+            </summary>
+        </member>
+        <member name="T:CS.Img.User.CSWebAPIRespUserInfo">
+            <summary>
+            返回用户信息值
+            </summary>
+        </member>
+        <member name="F:CS.Img.User.CSWebAPIRespUserInfo.roles">
+            <summary>
+            用户角色
+            </summary>
+        </member>
+        <member name="F:CS.Img.User.CSWebAPIRespUserInfo.introduction">
+            <summary>
+            个人介绍
+            </summary>
+        </member>
+        <member name="F:CS.Img.User.CSWebAPIRespUserInfo.avatar">
+            <summary>
+            头像链接
+            </summary>
+        </member>
+        <member name="F:CS.Img.User.CSWebAPIRespUserInfo.name">
+            <summary>
+            名字
+            </summary>
+        </member>
+        <member name="T:CS.Img.User.UserController">
+            <summary>
+            用户信息控制类
+            </summary>
+        </member>
+        <member name="M:CS.Img.User.UserController.Login">
+            <summary>
+            登入
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.User.UserController.Logout">
+            <summary>
+            登出
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.User.UserController.GetUserInfo(System.String)">
+            <summary>
+            根据用户token值返回用户信息
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

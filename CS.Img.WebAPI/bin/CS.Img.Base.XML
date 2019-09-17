@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Base</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Base.IBaseApp">
+            <summary>
+            基础数据控制层
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.IBaseService">
+            <summary>
+            业务层接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.IBaseRepository">
+            <summary>
+            基础数据仓储层接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetStationList">
+            <summary>
+            获取站点信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetCardStateList">
+            <summary>
+            获取卡状态列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetRetailTypeList">
+            <summary>
+            获取散户卡级别列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.#ctor(CS.Img.Base.IBaseService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="cardService"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetStationList">
+            <summary>
+            获取站点信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetCardStateList">
+            <summary>
+            获取卡状态列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetRetailTypeList">
+            <summary>
+            获取散户卡级别列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Base.BaseRepository">
+            <summary>
+            基础数据仓储实现类
+            </summary>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetStationList">
+            <summary>
+            获取油站列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetCardStateList">
+            <summary>
+            获取卡状态列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetRetailTypeList">
+            <summary>
+            获取散户卡级别列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Base.Station">
+            <summary>
+            油站信息
+            </summary>
+        </member>
+        <member name="F:CS.Img.Base.Station.stationno">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="F:CS.Img.Base.Station.stationname">
+            <summary>
+            油站名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.CardState">
+            <summary>
+            卡状态
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.CardState.cardState">
+            <summary>
+            卡状态编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.CardState.cardStateName">
+            <summary>
+            卡状态名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.RetailType">
+            <summary>
+            散户卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.RetailType.retailTypeID">
+            <summary>
+            散户卡类型编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.RetailType.retailTypeName">
+            <summary>
+            散户卡类型名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.BaseController">
+            <summary>
+            基础信息控制类
+            </summary>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetStationList">
+            <summary>
+            获取油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetCardStateList">
+            <summary>
+            获取油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetCardStateCompList">
+            <summary>
+            获取油站复杂列表信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetRetailTypeList">
+            <summary>
+            获取油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetCardStateList">
+            <summary>
+            获取卡状态列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetRetailTypeList">
+            <summary>
+            获取散户卡级别列表
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

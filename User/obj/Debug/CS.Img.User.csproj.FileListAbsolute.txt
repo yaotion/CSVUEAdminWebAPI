@@ -1,0 +1,16 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\CS.Img.User.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\CS.Img.User.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\System.Web.Http.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\System.Net.Http.Formatting.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\Newtonsoft.Json.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\System.Web.Http.xml
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\System.Net.Http.Formatting.xml
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.User.dll.config
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.User.XML
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.User.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.User.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\obj\Debug\CS.Img.User.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\obj\Debug\CS.Img.User.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\User\obj\Debug\CS.Img.User.csprojResolveAssemblyReference.cache

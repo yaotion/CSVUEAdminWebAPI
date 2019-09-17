@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Online.Coupon</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Online.Coupon.CouponController">
+            <summary>
+            优惠券API
+            </summary>
+        </member>
+        <member name="M:CS.Img.Online.Coupon.CouponController.GetCoupon(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取指定编号的优惠券
+            </summary>
+            <param name="cardno">卡号</param>
+            <param name="guid">GUID</param>
+            <param name="reqstationid">请求的油站</param>
+            <param name="couponid">优惠券编号</param>
+            <returns>优惠券信息</returns>
+        </member>
+        <member name="M:CS.Img.Online.Coupon.CouponController.GetAllCoupons(System.String,System.String,System.String)">
+            <summary>
+            获取指定卡号下所有优惠券
+            </summary>
+            <param name="cardno">积分卡卡号</param>
+            <param name="guid">GUID</param>
+            <param name="reqstationid">请求的油站编号</param>
+            <returns>优惠券列表</returns>
+        </member>
+        <member name="M:CS.Img.Online.Coupon.CouponController.UnlockCoupon(System.String,System.String,System.String)">
+            <summary>
+            解锁优惠券
+            </summary>
+            <param name="cardno">指定的卡号</param>
+            <param name="guid"></param>
+            <param name="reqstationid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Online.Coupon.CouponController.UpdateCouponState(System.String,System.String,System.String,System.String)">
+            <summary>
+            修改优惠券
+            </summary>
+            <param name="cardno"></param>
+            <param name="guid"></param>
+            <param name="reqstationid"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

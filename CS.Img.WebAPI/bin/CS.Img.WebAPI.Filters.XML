@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.WebAPI.Filters</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.WebAPI.Filters.ActionMonitorAttribute">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.ActionMonitorAttribute.OnActionExecuting(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>       
+            请求处理前       
+            </summary>        
+            <param name="actionContext"></param>    
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.ActionMonitorAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
+            请求返回前        
+            <param name="actionExecutedContext"></param>     
+        </member>
+        <member name="P:CS.Img.WebAPI.Filters.ActionMonitorAttribute.ActionId">
+            <summary>        
+            全局请求ID号       
+            </summary>       
+        </member>
+        <member name="P:CS.Img.WebAPI.Filters.ActionMonitorAttribute.ClientIp">
+            <summary>
+            客户端IP地址  
+            </summary>
+        </member>
+        <member name="P:CS.Img.WebAPI.Filters.ActionMonitorAttribute.RequestId">
+            <summary>      
+            请求ID号        
+            </summary>       
+        </member>
+        <member name="P:CS.Img.WebAPI.Filters.ActionMonitorAttribute.controllername">
+             <summary>       
+            请求的接口       
+             </summary>     
+        </member>
+        <member name="T:CS.Img.WebAPI.Filters.BasicAuthenticationIdentity">
+            <summary>
+            基础认证基类
+            </summary>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.BasicAuthenticationIdentity.#ctor(System.String,System.String)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="name"></param>
+            <param name="password"></param>
+        </member>
+        <member name="P:CS.Img.WebAPI.Filters.BasicAuthenticationIdentity.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:CS.Img.WebAPI.Filters.BasicAuthenticationFilter">
+            <summary>
+            认证过滤器
+            </summary>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.BasicAuthenticationFilter.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            Override to Web API filter method to handle Basic Auth check
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.BasicAuthenticationFilter.ParseHeader(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            解析头文件
+            </summary>
+            <param name="actionContext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.BasicAuthenticationFilter.OnAuthorize(System.String,System.String,System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            重写认证函数
+            </summary>
+            <param name="userName"></param>
+            <param name="userPassword"></param>
+            <param name="actionContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.WebAPI.Filters.CustomBasicAuthenticationFilter">
+            <summary>
+            基础认证
+            </summary>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.CustomBasicAuthenticationFilter.OnAuthorize(System.String,System.String,System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            重写认证处理 函数
+            </summary>
+            <param name="userName"></param>
+            <param name="userPassword"></param>
+            <param name="actionContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute">
+            <summary>
+            异常拦截器
+            </summary>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+            重写异常处理函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:CS.Img.WebAPI.Filters.JWTAuthorizationFilterAttribute">
+            <summary>
+            JWT认证过滤器
+            </summary>
+        </member>
+        <member name="M:CS.Img.WebAPI.Filters.JWTAuthorizationFilterAttribute.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            重写过滤器认证方法
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+    </members>
+</doc>

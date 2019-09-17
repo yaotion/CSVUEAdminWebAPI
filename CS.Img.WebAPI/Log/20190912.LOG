@@ -1,0 +1,378 @@
+09:39:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+09:39:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+09:39:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+09:39:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+09:39:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+09:39:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery?begintime=&endtime=&stationNo=
+09:39:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+09:39:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+09:39:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/stationList?page=1&limit=20&stationno=
+09:39:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+09:58:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardUpdateQuery
+09:58:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+09:58:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/cardUpdateQuery?page=1&limit=20&stationno=
+09:58:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[1].[OK]
+09:59:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[2].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+09:59:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[2].[OK]
+09:59:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+09:59:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+09:59:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[4].[GET]=>http://127.0.0.1:8888/api/card/cardUpdateQuery?begintime=&endtime=&stationNo=
+09:59:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+10:03:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[5].[GET]=>http://127.0.0.1:8888/api/base/stationList?page=1&limit=20&stationno=
+10:03:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+11:21:06[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardReturnQuery
+11:21:06[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+11:24:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+11:24:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+11:24:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+11:24:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/cardReturnQuery?begintime=&endtime=&stationNo=
+11:24:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+11:24:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+11:25:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+11:25:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/cardUpdateQuery?begintime=&endtime=&stationNo=
+11:25:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+11:25:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+11:31:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardReturnQuery
+11:31:06[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+11:32:06[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery
+11:32:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[1].[OK]
+11:32:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[2].[GET]=>http://127.0.0.1:8888/api/card/cardChangePinQuery
+11:32:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[2].[OK]
+11:32:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/cardReturnQuery
+11:32:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+11:32:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+11:32:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+11:32:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/cardUpdateQuery?begintime=&endtime=&stationNo=
+11:32:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+11:32:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[6].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+11:32:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[7].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery?begintime=&endtime=&stationNo=
+11:32:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[7].[OK]
+11:32:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[7].[OK]
+11:32:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[8].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+11:32:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[9].[GET]=>http://127.0.0.1:8888/api/card/cardChangePinQuery?begintime=&endtime=&stationNo=
+11:32:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[9].[OK]
+11:32:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[9].[OK]
+11:32:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+11:32:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+11:32:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[11].[GET]=>http://127.0.0.1:8888/api/card/custDestroyQuery?begintime=&endtime=&stationNo=
+11:32:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[11].[OK]
+11:32:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[12].[GET]=>http://127.0.0.1:8888/api/base/stationList?page=1&limit=20&stationno=
+11:32:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[12].[OK]
+11:32:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[13].[GET]=>http://127.0.0.1:8888/api/base/stationList?page=1&limit=20&stationno=
+11:32:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[13].[OK]
+12:59:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardReturnWCQuery
+12:59:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+12:59:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/cardReturnNCQuery
+12:59:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[1].[OK]
+13:06:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[2].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+13:06:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[2].[OK]
+13:06:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+13:06:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[4].[GET]=>http://127.0.0.1:8888/api/card/cardReturnWCQuery?begintime=&endtime=&stationNo=
+13:06:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+13:06:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+13:07:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[5].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+13:07:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[6].[GET]=>http://127.0.0.1:8888/api/card/cardReturnNCQuery?begintime=&endtime=&stationNo=
+13:07:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[6].[OK]
+13:07:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[6].[OK]
+13:14:26[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[7].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+13:14:26[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[7].[OK]
+13:14:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[8].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+13:14:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[9].[GET]=>http://127.0.0.1:8888/api/card/cardReturnNCQuery?begintime=&endtime=&stationNo=
+13:14:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[9].[OK]
+13:14:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[9].[OK]
+13:27:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/stationList?page=1&limit=20&stationno=
+13:27:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+14:41:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery
+14:41:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+14:42:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?page=1&limit=20&stationno=
+14:42:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[1].[OK]
+14:44:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[2].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+14:44:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[2].[OK]
+14:44:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+14:44:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[4].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+14:44:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+14:44:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+14:48:00[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+14:48:00[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+15:08:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+15:08:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+15:08:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:08:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+15:08:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+15:08:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:08:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+15:08:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+15:08:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[4].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:08:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+15:08:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery
+15:08:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+15:09:00[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[6].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:09:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[6].[OK]
+15:09:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[7].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:09:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[7].[OK]
+15:09:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[8].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:09:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[8].[OK]
+15:09:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[9].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:09:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[9].[OK]
+15:09:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+15:09:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+15:09:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[11].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:09:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[11].[OK]
+15:49:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:49:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+15:49:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[1].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+15:49:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[2].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:49:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[2].[OK]
+15:49:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[2].[OK]
+15:51:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[3].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:51:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[3].[OK]
+15:51:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+15:51:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:51:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+15:51:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+15:53:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[6].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:53:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[6].[OK]
+15:53:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[7].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+15:53:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[8].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+15:53:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[8].[OK]
+15:53:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[8].[OK]
+17:50:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery
+17:51:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+17:52:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+17:52:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[Exception]
+17:52:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[0].[http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 587
+   在 CS.Img.Card.CardService.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 234
+   在 CS.Img.Card.CardApp.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 247
+   在 CS.Img.Card.CardController.QueryUserCardInfo(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 438
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+17:52:34[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'and' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 587
+   在 CS.Img.Card.CardService.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 234
+   在 CS.Img.Card.CardApp.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 247
+   在 CS.Img.Card.CardController.QueryUserCardInfo(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 438
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:40c3e3d5-22e4-475d-aea9-c91afceb55dd
+Error Number:156,State:1,Class:15
+17:52:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery
+17:52:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[1].[Exception]
+17:52:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[1].[http://127.0.0.1:8888/api/card/cardInfoQuery]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 587
+   在 CS.Img.Card.CardService.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 234
+   在 CS.Img.Card.CardApp.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 247
+   在 CS.Img.Card.CardController.QueryUserCardInfo(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 438
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+17:52:36[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'and' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 587
+   在 CS.Img.Card.CardService.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 234
+   在 CS.Img.Card.CardApp.QueryUserCardInfo(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 247
+   在 CS.Img.Card.CardController.QueryUserCardInfo(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 438
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:03d379e2-9990-4979-9dd5-185d166ee323
+Error Number:156,State:1,Class:15
+17:52:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+17:52:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+17:52:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery
+17:52:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[1].[OK]
+17:55:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[2].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+17:55:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[2].[OK]
+17:55:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+17:55:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[4].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+17:55:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+17:55:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+17:58:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[5].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+17:58:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[5].[OK]
+17:58:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[6].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+17:58:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[7].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+17:58:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[7].[OK]
+17:58:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[7].[OK]
+18:01:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[8].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+18:01:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[8].[OK]
+18:01:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[9].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+18:01:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+18:01:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+18:01:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+18:04:06[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[11].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+18:04:06[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[11].[OK]
+18:04:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[12].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+18:04:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[13].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+18:04:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[13].[OK]
+18:04:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[13].[OK]
+18:07:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[14].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+18:07:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[14].[OK]
+18:07:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[15].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+18:07:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[15].[OK]
+18:07:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[16].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+18:07:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[16].[OK]
+20:38:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+20:38:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+20:38:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:38:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+20:38:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+20:38:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/cardInfoQuery?begintime=&endtime=&stationNo=
+20:38:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+20:38:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]

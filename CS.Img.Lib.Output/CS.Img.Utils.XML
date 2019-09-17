@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Utils</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Utils.TokenManager">
+            <summary>
+            Token工具类
+            </summary>
+        </member>
+        <member name="M:CS.Img.Utils.TokenManager.GenerateToken(System.String)">
+            <summary>
+            生成Token
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Utils.TokenManager.GetPrincipal(System.String)">
+            <summary>
+            解析Principal
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Utils.TokenManager.ValidateToken(System.String,System.Security.Principal.IPrincipal@)">
+            <summary>
+            验证Principal
+            </summary>
+            <param name="token"></param>
+        </member>
+    </members>
+</doc>

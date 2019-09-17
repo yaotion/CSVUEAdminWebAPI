@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Identity</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Identity.IdentityResult">
+            <summary>
+            登录验证结果
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.IdentityResult.Success">
+            <summary>
+            是否登录成功
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.IdentityResult.ResultText">
+            <summary>
+            登录结果说明文字
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.IdentityResult.TokenString">
+            <summary>
+            登录成功的票据
+            </summary>
+        </member>
+        <member name="T:CS.Img.Identity.IdentityBase">
+            <summary>
+            登录请求信息
+            </summary>
+        </member>
+        <member name="T:CS.Img.Identity.OperatorInfo">
+            <summary>
+            操作员信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.OperatorInfo.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.OperatorInfo.OptName">
+            <summary>
+            操作员姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.OperatorInfo.Pin">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.OperatorInfo.StationNO">
+            <summary>
+            油站
+            </summary>
+        </member>
+        <member name="P:CS.Img.Identity.OperatorInfo.CardNo">
+            <summary>
+            授权卡号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Identity.IdentityController">
+            <summary>
+            登录验证控制器
+            </summary>
+        </member>
+    </members>
+</doc>

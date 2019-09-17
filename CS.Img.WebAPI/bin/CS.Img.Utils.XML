@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Utils</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Utils.CSDBContext">
+            <summary>
+            Represents a database context implementation.
+            </summary>
+        </member>
+        <member name="M:CS.Img.Utils.CSDBContext.#ctor">
+            <summary>
+            Creates new instance of context, initiating a new connection to the database
+            </summary>
+        </member>
+        <member name="M:CS.Img.Utils.CSDBContext.CreateConnection">
+            <summary>
+            Creates connection object to database. This method is called in creating the instance of context.
+            </summary>
+            <returns>The connection object.</returns>
+        </member>
+        <member name="T:CS.Img.Utils.CSUoWFactory">
+            <summary>
+            Represents a factory of unit of work implementation.
+            </summary>
+        </member>
+        <member name="M:CS.Img.Utils.CSUoWFactory.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            Creates a new instance, with context object.
+            </summary>
+            <param name="context">The context object.</param>
+        </member>
+        <member name="M:CS.Img.Utils.CSUoWFactory.Create">
+            <summary>
+            Creates an unit of work.
+            </summary>
+            <returns>The unit of work.</returns>
+        </member>
+        <member name="T:CS.Img.Utils.CSHttpWebAPIResp">
+            <summary>
+            自定义WebAPI返回的数据内容
+            </summary>
+        </member>
+        <member name="F:CS.Img.Utils.CSHttpWebAPIResp.code">
+            <summary>
+            自定义状态代码,20000表示正常
+            </summary>
+        </member>
+        <member name="F:CS.Img.Utils.CSHttpWebAPIResp.data">
+            <summary>
+            自定义接口返回数据
+            </summary>
+        </member>
+        <member name="T:CS.Img.Utils.CSWebAPIListResp">
+            <summary>
+            列表类返回数据
+            </summary>
+        </member>
+        <member name="F:CS.Img.Utils.CSWebAPIListResp.items">
+            <summary>
+            数据内容
+            </summary>
+        </member>
+        <member name="F:CS.Img.Utils.CSWebAPIListResp.total">
+            <summary>
+            数据数量
+            </summary>
+        </member>
+        <member name="T:CS.Img.Utils.CSWebAPIListSumResp">
+            <summary>
+            列表类返回数据
+            </summary>
+        </member>
+        <member name="F:CS.Img.Utils.CSWebAPIListSumResp.sum">
+            <summary>
+            统计信息
+            </summary>
+        </member>
+        <member name="T:CS.Img.Utils.TokenManager">
+            <summary>
+            Token工具类
+            </summary>
+        </member>
+        <member name="M:CS.Img.Utils.TokenManager.GenerateToken(System.String)">
+            <summary>
+            生成Token
+            </summary>
+            <param name="username"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Utils.TokenManager.GetPrincipal(System.String)">
+            <summary>
+            解析Principal
+            </summary>
+            <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Utils.TokenManager.ValidateToken(System.String,System.Security.Principal.IPrincipal@)">
+            <summary>
+            验证Principal
+            </summary>
+            <param name="token"></param>
+        </member>
+    </members>
+</doc>

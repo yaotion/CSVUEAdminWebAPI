@@ -1,0 +1,320 @@
+17:22:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+17:22:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+18:03:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+18:03:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+18:03:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+18:03:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+18:03:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+18:03:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/cardChangePinQuery?begintime=&endtime=&stationNo=
+18:03:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+18:03:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+18:03:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+18:03:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+18:03:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/custDestroyQuery?begintime=&endtime=&stationNo=
+18:03:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+18:04:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[6].[GET]=>http://127.0.0.1:8888/api/base/stationList?page=1&limit=20&stationno=
+18:04:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[6].[OK]
+18:29:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery
+18:29:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[Exception]
+18:29:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[0].[http://127.0.0.1:8888/api/card/cardReloadQuery]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 458
+   在 CS.Img.Card.CardService.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 186
+   在 CS.Img.Card.CardApp.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 200
+   在 CS.Img.Card.CardController.GetReloadPinRecord(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 335
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+18:29:56[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'SELECT' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 458
+   在 CS.Img.Card.CardService.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 186
+   在 CS.Img.Card.CardApp.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 200
+   在 CS.Img.Card.CardController.GetReloadPinRecord(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 335
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:40e1ca39-03d0-44c2-ad4d-cbd30c3fd20c
+Error Number:156,State:1,Class:15
+18:32:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery
+18:32:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[1].[Exception]
+18:32:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[1].[http://127.0.0.1:8888/api/card/cardReloadQuery]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 458
+   在 CS.Img.Card.CardService.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 186
+   在 CS.Img.Card.CardApp.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 200
+   在 CS.Img.Card.CardController.GetReloadPinRecord(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 335
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+18:32:22[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'SELECT' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 458
+   在 CS.Img.Card.CardService.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 186
+   在 CS.Img.Card.CardApp.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 200
+   在 CS.Img.Card.CardController.GetReloadPinRecord(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 335
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:b2587860-1c59-4d57-9414-057eb0bcae04
+Error Number:156,State:1,Class:15
+18:34:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[2].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery
+18:35:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[2].[Exception]
+18:35:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[2].[http://127.0.0.1:8888/api/card/cardReloadQuery]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 458
+   在 CS.Img.Card.CardService.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 186
+   在 CS.Img.Card.CardApp.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 200
+   在 CS.Img.Card.CardController.GetReloadPinRecord(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 335
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+18:35:10[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'SELECT' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1589
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Card.CardRepository.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Data\CardRepository.cs:行号 458
+   在 CS.Img.Card.CardService.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Domain\CardService.cs:行号 186
+   在 CS.Img.Card.CardApp.GetReloadPinRecord(String stationNo, String beginTime, String endTime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\AppService\CardApp.cs:行号 200
+   在 CS.Img.Card.CardController.GetReloadPinRecord(String stationNo, String begintime, String endtime) 位置 e:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Card\Controllers\CardController.cs:行号 335
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:420535c4-c42a-47f2-b2d3-6e9795ac3928
+Error Number:156,State:1,Class:15
+18:35:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery
+18:35:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
+18:46:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+18:46:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+18:46:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?begintime=&endtime=&stationNo=
+18:46:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[2].[OK]
+18:46:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery?begintime=&endtime=&stationNo=
+18:46:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[3].[OK]
+18:47:24[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[0].[GET]=>http://127.0.0.1:8888/api/card/cardReloadQuery?begintime=&endtime=&stationNo=
+18:47:24[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[0].[OK]
