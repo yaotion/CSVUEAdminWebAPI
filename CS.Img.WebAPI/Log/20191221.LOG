@@ -1,0 +1,993 @@
+12:53:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+12:53:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+12:53:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[1].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:53:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[1].[OK]
+12:53:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[2].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:53:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[2].[OK]
+12:53:47[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[3].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=0&RetailTypeName=普通
+12:53:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[3].[OK]
+12:53:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[4].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=0&RetailTypeName=普通
+12:53:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[4].[OK]
+12:53:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[5].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+12:53:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[5].[OK]
+12:54:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[6].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeAdd
+12:54:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[6].[OK]
+12:54:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[7].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?index=0&OptNo=&OptName=&OptOrg=&OptDuty=&Remark=&Enabled=&RetailTypeID=99
+12:54:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[7].[OK]
+12:54:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[8].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:54:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[8].[OK]
+12:54:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[9].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:54:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[9].[OK]
+12:54:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[10].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=99
+12:54:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[10].[OK]
+12:54:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[11].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeDelete
+12:54:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[11].[OK]
+12:54:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[12].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:54:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[12].[OK]
+12:54:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[13].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeAdd
+12:54:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[13].[OK]
+12:54:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[14].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?index=0&OptNo=&OptName=&OptOrg=&OptDuty=&Remark=&Enabled=&RetailTypeID=99&RetailTypeName=99
+12:54:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[14].[OK]
+12:54:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[15].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?index=0&OptNo=&OptName=&OptOrg=&OptDuty=&Remark=&Enabled=&RetailTypeID=99&RetailTypeName=99
+12:54:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[15].[OK]
+12:54:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[16].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:54:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[16].[OK]
+12:54:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[17].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeDelete
+12:54:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[17].[OK]
+12:54:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[18].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=0&RetailTypeName=普通
+12:54:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[18].[OK]
+12:54:47[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[19].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeSetUserCard
+12:54:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[19].[OK]
+12:54:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[20].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?index=0&OptNo=&OptName=&OptOrg=&OptDuty=&Remark=&Enabled=&RetailTypeID=99&RetailTypeName=99
+12:54:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[20].[OK]
+12:54:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[21].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+12:54:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[21].[OK]
+12:54:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[22].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+12:54:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[22].[OK]
+12:55:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[23].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+12:55:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[23].[OK]
+12:55:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[24].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:55:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[24].[OK]
+12:55:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[25].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:55:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[25].[OK]
+12:55:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[26].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+12:55:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[26].[OK]
+12:59:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[27].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+12:59:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[27].[OK]
+12:59:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[28].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:59:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[28].[OK]
+12:59:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[29].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+12:59:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[29].[OK]
+12:59:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[30].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+12:59:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[30].[OK]
+12:59:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[31].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=3&RetailTypeName=钻石卡
+12:59:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[31].[OK]
+12:59:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[32].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeUpdate
+12:59:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[32].[OK]
+12:59:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[33].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=2&RetailTypeName=金卡
+12:59:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[33].[OK]
+12:59:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[34].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=0&RetailTypeName=普通
+12:59:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[34].[OK]
+12:59:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[35].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+12:59:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[35].[OK]
+13:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[36].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeSetUserCard
+13:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[36].[OK]
+13:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[37].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+13:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[37].[OK]
+13:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[38].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=3&RetailTypeName=钻石卡
+13:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[38].[OK]
+13:00:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[39].[POST]=>http://127.0.0.1:8888/api/retailType/retailTypeSetUserCard
+13:00:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[39].[OK]
+13:00:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[40].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=3&RetailTypeName=钻石卡
+13:00:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[40].[OK]
+13:00:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[41].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=3&RetailTypeName=钻石卡
+13:00:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[41].[OK]
+13:00:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[42].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=2&RetailTypeName=金卡
+13:00:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[42].[OK]
+13:00:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[43].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=1&RetailTypeName=银卡
+13:00:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[43].[OK]
+13:00:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[44].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeUserCardListQuery?RetailTypeID=0&RetailTypeName=普通
+13:00:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[44].[OK]
+13:02:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[45].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?stationNo=&stationType=
+13:02:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[46].[GET]=>http://127.0.0.1:8888/api/base/stationList?stationNo=&stationType=
+13:02:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[46].[OK]
+13:02:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[46].[OK]
+15:35:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+15:35:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+15:35:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:35:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+15:35:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[2].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery?stationNo=&stationType=
+15:35:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/stationList?stationNo=&stationType=
+15:35:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?stationNo=&stationType=
+15:35:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+15:35:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+15:35:46[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[1].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery?stationNo=&stationType=
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?stationNo=&stationType=
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?stationNo=&stationType=
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+15:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[4].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[4].[OK]
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[5].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery?stationNo=&stationType=
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[6].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?stationNo=&stationType=
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[7].[GET]=>http://127.0.0.1:8888/api/base/stationList?stationNo=&stationType=
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[7].[OK]
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[7].[OK]
+15:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[7].[OK]
+15:52:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[8].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+15:52:24[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[8].[OK]
+15:52:24[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[retailType].[9].[GET]=>http://127.0.0.1:8888/api/retailType/retailTypeListQuery?stationNo=&stationType=
+15:52:24[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[retailType].[9].[OK]
+19:44:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:44:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[1].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[2].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/stationList
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+19:50:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+19:50:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+19:50:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:50:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+19:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[2].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+19:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/stationList
+19:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+19:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+19:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+19:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+19:52:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[5].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+19:52:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[5].[OK]
+19:57:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[0].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?priceSetNo=2
+19:57:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[0].[OK]
+19:57:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[1].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+19:57:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[1].[OK]
+19:59:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[2].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:59:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[2].[OK]
+19:59:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[3].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+19:59:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+19:59:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[5].[GET]=>http://127.0.0.1:8888/api/base/stationList
+19:59:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+19:59:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+19:59:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+19:59:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[6].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+19:59:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[6].[OK]
+20:48:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[0].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?priceSetNo=2
+20:48:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[0].[OK]
+20:49:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:49:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+20:49:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[1].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+20:49:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList
+20:49:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+20:49:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+20:49:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+20:49:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[3].[OK]
+20:50:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[4].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:50:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[5].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:50:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[5].[OK]
+20:50:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[5].[OK]
+20:50:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[6].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:50:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[7].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:50:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[7].[OK]
+20:50:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[7].[OK]
+20:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[8].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[9].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[9].[OK]
+20:50:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[9].[OK]
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[10].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[10].[OK]
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[11].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[12].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[13].[GET]=>http://127.0.0.1:8888/api/base/stationList
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[13].[OK]
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[13].[OK]
+20:53:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[13].[OK]
+20:53:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[14].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=1&PriceSetName=111111111&UseTime=2019-12-21+15:04:35&PriceUse=1&ContentSum=0&InfoSum=0&IUpdateFlag=1
+20:53:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[15].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=1&PriceSetName=111111111&UseTime=2019-12-21+15:04:35&PriceUse=1&ContentSum=0&InfoSum=0&IUpdateFlag=1
+20:53:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[15].[OK]
+20:53:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[15].[OK]
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[16].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[16].[OK]
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[17].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[18].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[19].[GET]=>http://127.0.0.1:8888/api/base/stationList
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[19].[OK]
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[19].[OK]
+20:59:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[19].[OK]
+20:59:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[20].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:59:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[21].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+20:59:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[21].[OK]
+20:59:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[21].[OK]
+21:00:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[22].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:00:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[23].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:00:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[23].[OK]
+21:00:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[23].[OK]
+21:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[24].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[25].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[25].[OK]
+21:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[25].[OK]
+21:00:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[26].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?priceSetNo=2
+21:00:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[26].[OK]
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[27].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[27].[OK]
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[28].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[28].[OK]
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[29].[GET]=>http://127.0.0.1:8888/api/base/stationList
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[30].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[30].[OK]
+21:04:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[30].[OK]
+21:04:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[31].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:04:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[32].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:04:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[32].[OK]
+21:04:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[32].[OK]
+21:08:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[33].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:08:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[33].[OK]
+21:08:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[34].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+21:08:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[35].[GET]=>http://127.0.0.1:8888/api/base/stationList
+21:08:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[36].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+21:08:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[36].[OK]
+21:08:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[36].[OK]
+21:08:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[36].[OK]
+21:08:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[37].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:08:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[38].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:08:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[38].[OK]
+21:08:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[38].[OK]
+21:34:47[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+21:34:47[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[2].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/stationList
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+21:34:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+21:34:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[5].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:34:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[6].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:34:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[6].[OK]
+21:34:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[6].[OK]
+21:38:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[7].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:38:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[7].[OK]
+21:38:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[8].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+21:38:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[9].[GET]=>http://127.0.0.1:8888/api/base/stationList
+21:38:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+21:38:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+21:38:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+21:38:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+21:38:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[11].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:38:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[12].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:38:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[12].[OK]
+21:38:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[12].[OK]
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[13].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[13].[OK]
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[14].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[14].[OK]
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[15].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[16].[GET]=>http://127.0.0.1:8888/api/base/stationList
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[16].[OK]
+21:42:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[16].[OK]
+21:42:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[17].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:42:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[18].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:42:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[18].[OK]
+21:42:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[18].[OK]
+21:44:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[19].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:44:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[19].[OK]
+21:44:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[20].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+21:44:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[21].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+21:44:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[22].[GET]=>http://127.0.0.1:8888/api/base/stationList
+21:44:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[22].[OK]
+21:44:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[22].[OK]
+21:44:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[22].[OK]
+21:44:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[23].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:44:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[24].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:44:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[24].[OK]
+21:44:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[24].[OK]
+21:44:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[25].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:44:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[25].[OK]
+21:44:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[26].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:44:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[26].[OK]
+21:44:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[27].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:44:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[28].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:44:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[28].[OK]
+21:44:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[28].[OK]
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[29].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[29].[OK]
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[30].[GET]=>http://127.0.0.1:8888/api/priceSet/priceSetListQuery
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[31].[GET]=>http://127.0.0.1:8888/api/base/stationList
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[32].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[32].[OK]
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[32].[OK]
+21:47:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[32].[OK]
+21:47:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[33].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:47:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[34].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:47:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[34].[OK]
+21:47:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[34].[OK]
+21:48:01[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[35].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+21:48:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[35].[Exception]
+21:48:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[35].[http://127.0.0.1:8888/api/priceSet/priceStationSetStation]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 103
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+21:48:02[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'PriceStationNo'，表 'ImgCenter.dbo.PriceStation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 103
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:8662aeb3-3fe9-483e-91b1-634648df9e75
+Error Number:515,State:2,Class:16
+21:48:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[36].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+21:48:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[36].[Exception]
+21:48:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[36].[http://127.0.0.1:8888/api/priceSet/priceStationSetStation]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 103
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+21:48:27[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'PriceStationNo'，表 'ImgCenter.dbo.PriceStation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 103
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:c6dc3e1a-e928-4e88-883a-1572fe8e5630
+Error Number:515,State:2,Class:16
+21:51:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[37].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+21:51:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[37].[Exception]
+21:51:05[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[37].[http://127.0.0.1:8888/api/priceSet/priceStationSetStation]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 103
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+21:51:05[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'PriceStationNo'，表 'ImgCenter.dbo.PriceStation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 103
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:dfd8eeca-2e7a-4ac8-a83a-c7f15fc85d4b
+Error Number:515,State:2,Class:16
+21:59:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[0].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+21:59:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[0].[OK]
+21:59:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[1].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+21:59:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[1].[OK]
+21:59:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[2].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+21:59:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[2].[OK]
+22:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[3].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[3].[OK]
+22:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[4].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:00:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[4].[OK]
+22:00:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[5].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:00:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[5].[OK]
+22:00:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[6].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:00:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[6].[OK]
+22:00:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[7].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:00:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[7].[OK]
+22:00:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[8].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:00:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[8].[OK]
+22:00:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[9].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:00:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[9].[Exception]
+22:00:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[9].[http://127.0.0.1:8888/api/priceSet/priceStationSetStation]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+22:00:20[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'PriceStationNo'，表 'ImgCenter.dbo.PriceStation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:0e75eae5-d3a7-4f09-b1eb-603b49073e37
+Error Number:515,State:2,Class:16
+22:00:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[10].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:00:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[10].[Exception]
+22:00:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[10].[http://127.0.0.1:8888/api/priceSet/priceStationSetStation]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+22:00:23[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'PriceStationNo'，表 'ImgCenter.dbo.PriceStation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:2198a811-1894-4824-a4c7-254c67073d6f
+Error Number:515,State:2,Class:16
+22:00:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[11].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:00:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[12].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:00:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[12].[OK]
+22:00:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[12].[OK]
+22:00:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[13].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:00:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[13].[Exception]
+22:00:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[13].[http://127.0.0.1:8888/api/priceSet/priceStationSetStation]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+22:00:28[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'PriceStationNo'，表 'ImgCenter.dbo.PriceStation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:ba4029e5-686c-4baf-995b-aad8681f8f23
+Error Number:515,State:2,Class:16
+22:00:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[14].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:00:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[14].[Exception]
+22:00:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[14].[http://127.0.0.1:8888/api/priceSet/priceStationSetStation]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+22:00:35[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'PriceStationNo'，表 'ImgCenter.dbo.PriceStation'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Data\PriceSystemRepository.cs:行号 104
+   在 CS.Img.PriceSystem.PriceSystemService.AddPriceStation(Int32 PriceSetNo, String StationNo, String StationName) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Service\PriceSystemService.cs:行号 61
+   在 CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Domain\PriceSystemApp.cs:行号 80
+   在 CS.Img.PriceSystem.PriceSystemController.SetPriceStation(PriceStationSet priceStationSet) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PriceSystem\Controllers\PriceSystemController.cs:行号 89
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:a6b2ae7c-5e6c-4d89-8429-142eca9af1ca
+Error Number:515,State:2,Class:16
+22:00:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[15].[GET]=>http://127.0.0.1:8888/api/priceSet/priceContentListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:00:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[15].[OK]
+22:00:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[16].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:00:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[16].[OK]
+22:03:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[0].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:03:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[0].[OK]
+22:03:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[1].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:03:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[1].[OK]
+22:03:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[2].[POST]=>http://127.0.0.1:8888/api/priceSet/priceStationSetStation
+22:03:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[2].[OK]
+22:03:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[priceSet].[3].[GET]=>http://127.0.0.1:8888/api/priceSet/priceStationListQuery?PriceSetNo=2&PriceSetName=测试价格体系&UseTime=2019-12-21+15:05:28&PriceUse=1&ContentSum=2&InfoSum=2&IUpdateFlag=1
+22:03:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[priceSet].[3].[OK]

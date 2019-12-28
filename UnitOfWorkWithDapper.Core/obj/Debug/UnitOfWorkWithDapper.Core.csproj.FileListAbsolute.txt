@@ -22,4 +22,6 @@ E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\UnitOfWorkWithDapper.Core.
 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\UnitOfWorkWithDapper.Core.pdb
 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\obj\Debug\UnitOfWorkWithDapper.Core.dll
 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\obj\Debug\UnitOfWorkWithDapper.Core.pdb
-E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\obj\Debug\UnitOfWorkWithDapper.Core.csprojResolveAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\obj\Debug\UnitOfWorkWithDapper.Core.csproj.CoreCompileInputs.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\obj\Debug\UnitOfWorkWithDapper.Core.csproj.CopyComplete
+E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\obj\Debug\UnitOfWorkWithDapper.Core.csprojAssemblyReference.cache

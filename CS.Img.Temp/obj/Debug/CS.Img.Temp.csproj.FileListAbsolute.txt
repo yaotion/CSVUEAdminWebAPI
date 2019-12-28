@@ -1,0 +1,6 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Temp.dll.config
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Temp.XML
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Temp.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Temp.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Temp\obj\Debug\CS.Img.Temp.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Temp\obj\Debug\CS.Img.Temp.pdb

@@ -1,0 +1,193 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.PaywayInfo</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.PaywayInfo.PaywayInfoController">
+            <summary>
+            站点信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoController.GetPaywayInfoList">
+            <summary>
+            获取支付方式信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoController.AddPaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            添加支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoController.UpdatePaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            修改支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoController.DeletePaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            删除支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.PaywayInfo.IPaywayInfoRepository">
+            <summary>
+            站点信息Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.IPaywayInfoRepository.GetPaywayInfoList">
+            <summary>
+            获取支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.IPaywayInfoRepository.AddPaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            添加支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.IPaywayInfoRepository.UpdatePaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            修改支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.IPaywayInfoRepository.DeletePaywayInfo(System.String)">
+            <summary>
+            删除支付方式
+            </summary>
+            <param name="payway"></param>
+        </member>
+        <!-- 对于成员“T:CS.Img.PaywayInfo.PaywayInfo”忽略有格式错误的 XML 注释 -->
+        <member name="P:CS.Img.PaywayInfo.PaywayInfo.Pay_way">
+            <summary>
+            支付方式编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PaywayInfo.PaywayInfo.Way_name">
+            <summary>
+            支付方式名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.PaywayInfo.PaywayInfoRepository">
+            <summary>
+            站点信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoRepository.GetPaywayInfoList">
+            <summary>
+            获取所有支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoRepository.AddPaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            添加支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoRepository.UpdatePaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            修改支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoRepository.DeletePaywayInfo(System.String)">
+            <summary>
+            删除支付方式
+            </summary>
+            <param name="payway"></param>
+        </member>
+        <member name="T:CS.Img.PaywayInfo.IPaywayInfoApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.PaywayInfo.PaywayInfoApp">
+            <summary>
+            站点信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoApp.#ctor(CS.Img.PaywayInfo.IPaywayInfoService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoApp.GetPaywayInfoList">
+            <summary>
+            获取所有支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoApp.AddPaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            添加支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoApp.UpdatePaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            修改支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoApp.DeletePaywayInfo(System.String)">
+            <summary>
+            删除支付方式
+            </summary>
+            <param name="payway"></param>
+        </member>
+        <member name="T:CS.Img.PaywayInfo.IPaywayInfoService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+        <member name="T:CS.Img.PaywayInfo.PaywayInfoService">
+            <summary>
+            站点信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoService.#ctor(CS.Img.PaywayInfo.IPaywayInfoRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoService.GetPaywayInfoList">
+            <summary>
+            获取所有支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoService.AddPaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            添加支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoService.UpdatePaywayInfo(CS.Img.PaywayInfo.PaywayInfo)">
+            <summary>
+            修改支付方式
+            </summary>
+            <param name="paywayInfo"></param>
+        </member>
+        <member name="M:CS.Img.PaywayInfo.PaywayInfoService.DeletePaywayInfo(System.String)">
+            <summary>
+            删除支付方式
+            </summary>
+            <param name="payway"></param>
+        </member>
+    </members>
+</doc>

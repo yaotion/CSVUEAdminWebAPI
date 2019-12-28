@@ -4,39 +4,6 @@
         <name>CS.Img.Base</name>
     </assembly>
     <members>
-        <member name="T:CS.Img.Base.IBaseApp">
-            <summary>
-            基础数据控制层
-            </summary>
-        </member>
-        <member name="T:CS.Img.Base.IBaseService">
-            <summary>
-            业务层接口
-            </summary>
-        </member>
-        <member name="T:CS.Img.Base.IBaseRepository">
-            <summary>
-            基础数据仓储层接口
-            </summary>
-        </member>
-        <member name="M:CS.Img.Base.IBaseRepository.GetStationList">
-            <summary>
-            获取站点信息列表
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Base.IBaseRepository.GetCardStateList">
-            <summary>
-            获取卡状态列表
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Base.IBaseRepository.GetRetailTypeList">
-            <summary>
-            获取散户卡级别列表
-            </summary>
-            <returns></returns>
-        </member>
         <member name="M:CS.Img.Base.BaseApp.#ctor(CS.Img.Base.IBaseService,CS.Img.Utils.CSUoWFactory)">
             <summary>
             构造函数
@@ -61,6 +28,59 @@
             获取散户卡级别列表
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetPreIdList">
+            <summary>
+            获取优惠类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetPayWayList">
+            <summary>
+            获取支付方式列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetShiftNoList(System.String,System.String)">
+            <summary>
+            获取班号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetOilInfoList">
+            <summary>
+            获取油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetTerminalInfoList(System.String)">
+            <summary>
+            获取油枪信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetTradeTypeInfoList">
+            <summary>
+            获取交易类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetCardTypeInfoList">
+            <summary>
+            获取卡类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseApp.GetEmployeeList(System.String)">
+            <summary>
+            油站员工信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Base.IBaseApp">
+            <summary>
+            基础数据控制层
+            </summary>
         </member>
         <member name="T:CS.Img.Base.BaseRepository">
             <summary>
@@ -88,6 +108,125 @@
         <member name="M:CS.Img.Base.BaseRepository.GetRetailTypeList">
             <summary>
             获取散户卡级别列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetPreIdList">
+            <summary>
+            获取优惠类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetPayWayList">
+            <summary>
+            获取支付方式列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetShiftNoList(System.String,System.String)">
+            <summary>
+            获取班号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetOilInfoList">
+            <summary>
+            获取油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetTerminalInfoList(System.String)">
+            <summary>
+            获取油枪信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetTradeTypeInfoList">
+            <summary>
+            获取交易类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetCardTypeInfoList">
+            <summary>
+            获取卡类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseRepository.GetEmployeeList(System.String)">
+            <summary>
+            油站员工信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Base.IBaseRepository">
+            <summary>
+            基础数据仓储层接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetStationList">
+            <summary>
+            获取站点信息列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetCardStateList">
+            <summary>
+            获取卡状态列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetRetailTypeList">
+            <summary>
+            获取散户卡级别列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetPreIdList">
+            <summary>
+            获取优惠类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetPayWayList">
+            <summary>
+            获取支付方式列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetShiftNoList(System.String,System.String)">
+            <summary>
+            获取班号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetOilInfoList">
+            <summary>
+            获取油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetTerminalInfoList(System.String)">
+            <summary>
+            获取油枪信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetTradeTypeInfoList">
+            <summary>
+            获取交易类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetCardTypeInfoList">
+            <summary>
+            获取卡类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.IBaseRepository.GetEmployeeList(System.String)">
+            <summary>
+            油站员工信息
             </summary>
             <returns></returns>
         </member>
@@ -136,6 +275,121 @@
             散户卡类型名称
             </summary>
         </member>
+        <member name="T:CS.Img.Base.preType">
+            <summary>
+            优惠类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.preType.preId">
+            <summary>
+            优惠类型编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.preType.preName">
+            <summary>
+            优惠类型名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.PayWay">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.PayWay.Pay_Way">
+            <summary>
+            支付方式编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.PayWay.Way_Name">
+            <summary>
+            支付方式名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.ShiftNo">
+            <summary>
+            班号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.ShiftNo.Shift_No">
+            <summary>
+            班号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.OilInfo">
+            <summary>
+            油品信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.OilInfo.OilCode">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.OilInfo.OilName">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.TerminalInfo">
+            <summary>
+            油枪信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.TerminalInfo.Terminal">
+            <summary>
+            油枪号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.TradeTypeInfo">
+            <summary>
+            交易类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.TradeTypeInfo.TradeType">
+            <summary>
+            交易类型编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.TradeTypeInfo.TradeTypeName">
+            <summary>
+            交易类型名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.CardTypeInfo">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.CardTypeInfo.CardType">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.CardTypeInfo.CardTypeName">
+            <summary>
+            卡类型名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Base.Employee">
+            <summary>
+            油站员工信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.Employee.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.Employee.Emp_No">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Base.Employee.Emp_Name">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
         <member name="T:CS.Img.Base.BaseController">
             <summary>
             基础信息控制类
@@ -161,7 +415,55 @@
         </member>
         <member name="M:CS.Img.Base.BaseController.GetRetailTypeList">
             <summary>
-            获取油站信息
+            获取散户类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetPreIdList">
+            <summary>
+            获取优惠方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetPayWayList">
+            <summary>
+            获取支付方式列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetShiftNoList(System.String,System.String)">
+            <summary>
+            获取班号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetOilInfoList">
+            <summary>
+            获取油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetTerminalInfoList(System.String)">
+            <summary>
+            获取油枪号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetTradeTypeInfoList">
+            <summary>
+            获取班号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetCardTypeInfoList">
+            <summary>
+            获取卡类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseController.GetEmployeeList(System.String)">
+            <summary>
+            获取油枪号
             </summary>
             <returns></returns>
         </member>
@@ -176,6 +478,59 @@
             获取散户卡级别列表
             </summary>
             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetPreIdList">
+            <summary>
+            获取优惠类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetPayWayList">
+            <summary>
+            获取支付方式列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetShiftNoList(System.String,System.String)">
+            <summary>
+            获取班号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetOilInfoList">
+            <summary>
+            获取油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetTerminalInfoList(System.String)">
+            <summary>
+            获取油枪信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetTradeTypeInfoList">
+            <summary>
+            获取交易类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetCardTypeInfoList">
+            <summary>
+            获取卡类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Base.BaseService.GetEmployeeList(System.String)">
+            <summary>
+            油站员工信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Base.IBaseService">
+            <summary>
+            业务层接口
+            </summary>
         </member>
     </members>
 </doc>

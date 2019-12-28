@@ -1,0 +1,2931 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Station</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Station.StationApp">
+            <summary>
+            卡操作应用层
+            </summary>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.#ctor(CS.Img.Station.IStationService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="cardService"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTankStor(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油罐状态记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="oilCode"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetRptDayByMach(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按枪号
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetRptDayByOil(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油品
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetRptDayByTank(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油罐
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetRptDayByEmpQty(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员加油量
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetRptDayByEmpMoney(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员金额
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetOilAddRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取卸油记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetStationTanks(System.String)">
+            <summary>
+            获取油站的油罐信息
+            </summary>
+            <param name="stationNo"></param>    
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetOilChangeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油品信息修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetMachineRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油机信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTankRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油罐信息记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetOperLog(System.String,System.String,System.String)">
+            <summary>
+            获取操作员日志
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTankShift(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油罐库存记录(班报)
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeShiftNowDetail(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油明细
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeShiftNowByOil(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            TradeShiftNowByOil
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeShiftNowByTerminal(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油量按油枪统计
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetShiftNow(System.String)">
+            <summary>
+            获取当班信息
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTankAlarm(System.String,System.String,System.String)">
+            <summary>
+            获取油罐报警记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTrades(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeSumByTradeType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照交易类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeSumByCard(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeSumByCardType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeSumByEmpNo(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照员工
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeSumByOil(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照油品
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeSumByTerminal(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照枪号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetTradeSumByPayWay(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照结算方式
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetRptDayOilTank(System.String)">
+            <summary>
+            查询加油站综合日报表
+            </summary>
+            <param name="bussDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetEmpCard(System.String)">
+            <summary>
+            查询员工卡
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationApp.GetEmpCardBill(System.String,System.String,System.String)">
+            <summary>
+            查询员工卡对账单
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Station.IStationApp">
+            <summary>
+            卡操作应用层接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.StationController">
+            <summary>
+            用户卡控制类
+            </summary>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetUserSaleTrade(System.String,System.String,System.String,System.String)">
+            <summary>
+            根据用户token值返回用户信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetRptDayByMach(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按枪号
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetRptDayByOil(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油品
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetRptDayByTank(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油罐
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetRptDayByEmpQty(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员加油量
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetRptDayByEmpMoney(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员加油金额
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetOilAddRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取卸油记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetStationTanks(System.String)">
+            <summary>
+            获取油站的油罐信息
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetOilChangeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油品信息修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetMachineRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油机信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTankRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油罐信息记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetOperLog(System.String,System.String,System.String)">
+            <summary>
+            获取操作员日志
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTankShift(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取操作员日志
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTankShift(System.String)">
+            <summary>
+            获取当班信息
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeShiftNowDetail(System.String,System.Int32)">
+            <summary>
+            获取当班加油明细
+            </summary>
+            <param name="stationNo"></param>
+            <param name="payWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeShiftNowByOil(System.String,System.Int32)">
+            <summary>
+            获取当班加油明细
+            </summary>
+            <param name="stationNo"></param>
+            <param name="payWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeShiftNowByTerminal(System.String,System.Int32)">
+            <summary>
+            获取当班加油明细
+            </summary>
+            <param name="stationNo"></param>
+            <param name="payWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTankAlarm(System.String,System.String,System.String)">
+            <summary>
+            获取油罐报警记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTrades(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油明细
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeSumByTradeType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照交易类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeSumByCard(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeSumByCardType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeSumByEmpNo(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照员工
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeSumByOil(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照油品
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeSumByTerminal(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照枪号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetTradeSumByPayWay(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照结算方式
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetRptDayOilTank(System.String)">
+            <summary>
+            查询加油站综合日报表
+            </summary>
+            <param name="bussDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetEmpCard(System.String)">
+            <summary>
+            查询员工卡
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationController.GetEmpCardBill(System.String,System.String,System.String)">
+            <summary>
+            查询员工卡对账单
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Station.TankStor">
+            <summary>
+            油罐报警记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Tank_No">
+            <summary>
+            油罐编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.OilColor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.St_no">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Oil_code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Oil_name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Oil_height">
+            <summary>
+            油高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Oil_temp">
+            <summary>
+            油温
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Water_height">
+            <summary>
+            水高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Sta">
+            <summary>
+            状态
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Inven_volume">
+            <summary>
+            存油
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Empty_volume">
+            <summary>
+            可添
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Tank_diameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Low_temp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.High_temp">
+            <summary>
+            /
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Low_oil">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.Low_low_oil">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.High_oil">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.High_high_oil">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.High_water">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.HeightScale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankStor.LowScale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.RptDayByMach">
+            <summary>
+            油站日报按枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.Terminal">
+            <summary>
+            枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.Pump_Qty1">
+            <summary>
+            初始泵码数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.Pump_Qty2">
+            <summary>
+            结束泵码数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.Sum_Qty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByMach.Sum_Money">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.RptDayByOil">
+            <summary>
+            油站日报按枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.SJQtys">
+            <summary>
+            试机
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.SJMoneys">
+            <summary>
+            试机
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.XJQtys">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.XJMoneys">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.YPQtys">
+            <summary>
+            邮票
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.YPMoneys">
+            <summary>
+            邮票
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.YHKQtys">
+            <summary>
+            银行卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.YHKMoneys">
+            <summary>
+            银行卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.XYKQtys">
+            <summary>
+            信用卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.XYKMoneys">
+            <summary>
+            信用卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.JZQtys">
+            <summary>
+            记账
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.JZMoneys">
+            <summary>
+            记账
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.QTQtys">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.QTMoneys">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.QT1Qtys">
+            <summary>
+            其他1
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.QT1Moneys">
+            <summary>
+            其他1
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.WXQtys">
+            <summary>
+            微信
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.WXMoneys">
+            <summary>
+            微信
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.ZFBQtys">
+            <summary>
+            支付宝
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.ZFBMoneys">
+            <summary>
+            支付宝
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.YLQtys">
+            <summary>
+            银联
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByOil.YLMoneys">
+            <summary>
+            银联
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.RptDayByTank">
+            <summary>
+            油站日报按枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.Tank_No">
+            <summary>
+            油罐编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.Start_li">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.End_li">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.Add_li">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.Sale_li">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByTank.Lost_li">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.RptDayByEmpQty">
+            <summary>
+            油站日报按加油员加油量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpQty.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpQty.Emp_No">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpQty.Emp_Name">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpQty.Sum_Qty">
+            <summary>
+            总加油量
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.RptDayByEmpMoney">
+            <summary>
+            油站日报按加油员金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.Emp_No">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.Emp_Name">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.XJMoneys">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.YPMoneys">
+            <summary>
+            邮票
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.YHKMoneys">
+            <summary>
+            银行卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.JZMoneys">
+            <summary>
+            记账
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.QTMoneys">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.RptDayByEmpMoney.QT1Moneys">
+            <summary>
+            其他1
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.OilAdd">
+            <summary>
+            卸油记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.AddTime">
+            <summary>
+            卸油时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Tank_no">
+            <summary>
+            油罐编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Oil_name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Start_oilh">
+            <summary>
+            开始油高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Start_vol">
+            <summary>
+            开始升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Start_temp">
+            <summary>
+            开始温度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Start_dens">
+            <summary>
+            开始密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Start_wt">
+            <summary>
+            开始重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.End_oilh">
+            <summary>
+            结束油高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.End_vol">
+            <summary>
+            结束升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.End_temp">
+            <summary>
+            结束温度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.End_dens">
+            <summary>
+            结束密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.End_wt">
+            <summary>
+            结束重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Qty_vol">
+            <summary>
+            卸油量升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Qty_wt">
+            <summary>
+            卸油量重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Doc_vol">
+            <summary>
+            卸油单升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Doc_dens">
+            <summary>
+            卸油单密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Doc_wt">
+            <summary>
+            卸油单重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Lost_vol">
+            <summary>
+            损益升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Lost_wt">
+            <summary>
+            损益重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.Start_time">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilAdd.End_time">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.OilChange">
+            <summary>
+            油品信息修改纪录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.TransOrder">
+            <summary>
+            传输批次
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.Oil_Code">
+            <summary>
+            油品代号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.OilBrief_name">
+            <summary>
+            油品简称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.Density">
+            <summary>
+            密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.ChangeTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OilChange.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.Machine">
+            <summary>
+            油机信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.TransOrder">
+            <summary>
+            传输批次
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.Terminal">
+            <summary>
+            油枪编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.Mach_No">
+            <summary>
+            油机编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.Port_No">
+            <summary>
+            串口号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.Mach_Type">
+            <summary>
+            油机类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.Tank_No">
+            <summary>
+            油罐编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.ChangeTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Machine.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.Tank">
+            <summary>
+            油罐信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.TransOrder">
+            <summary>
+            传输批次
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Tank_No">
+            <summary>
+            油罐编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Tank_Diameter">
+            <summary>
+            直径
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Tank_Length">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Max_Volume">
+            <summary>
+            最大容积
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.High_Oil">
+            <summary>
+            高油位
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.High_High_Oil">
+            <summary>
+            高高油位
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Low_Oil">
+            <summary>
+            低油位
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Low_Low_Oil">
+            <summary>
+            低低油位
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.High_Water">
+            <summary>
+            高水位报警高度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.High_Temp">
+            <summary>
+            高温
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Low_Temp">
+            <summary>
+            低温
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Oil_Offset">
+            <summary>
+            油位
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.Water_Offset">
+            <summary>
+            水位
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.ChangeTime">
+            <summary>
+            修改时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Tank.StationNo">
+            <summary>
+            油站名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.OperLog">
+            <summary>
+            操作日志
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OperLog.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OperLog.Emp_No">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OperLog.Emp_Name">
+            <summary>
+            操作员姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OperLog.FunctionName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OperLog.OptTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OperLog.AutoID">
+            <summary>
+            编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.OperLog.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TankShift">
+            <summary>
+            油站班报
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.AutoId">
+            <summary>
+            自增编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.ShiftOrder">
+            <summary>
+            班序号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Emp_No">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Emp_Name">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.BussDate">
+             <summary>
+            商务日期
+             </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Shift_No">
+            <summary>
+            班号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.AddTime">
+            <summary>
+            记录添加时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Tank_No">
+            <summary>
+            油罐号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Start_Oilh">
+            <summary>
+            期初油高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Start_Vol">
+            <summary>
+            期初体积
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Start_Temp">
+            <summary>
+            期初温度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Start_Dens">
+            <summary>
+            期初密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Start_Wt">
+            <summary>
+            期初重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.End_Oilh">
+            <summary>
+            期末油高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.End_Vol">
+            <summary>
+            期末体积
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.End_Temp">
+            <summary>
+            期末温度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.End_Dens">
+            <summary>
+            期末密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.End_Wt">
+            <summary>
+            期末重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Doc_Dens">
+            <summary>
+            卸油单密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Doc_Vol">
+             <summary>
+            卸油单体积
+             </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Doc_Wt">
+            <summary>
+            卸油单重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Qty_Dens">
+             <summary>
+            卸油量密度
+             </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Qty_Vol">
+            <summary>
+            卸油量体积
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Qty_Wt">
+            <summary>
+            卸油量重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Acco_Vol">
+            <summary>
+            账面数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Acco_Wt">
+            <summary>
+            账面重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Loss_Wt">
+            <summary>
+            损益重量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Start_Pump">
+            <summary>
+            期初泵码值
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.End_Pump">
+            <summary>
+            期末泵码值
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankShift.Diff_Pump">
+            <summary>
+            泵码差
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeShiftNowDetail">
+            <summary>
+            本班营业量加油明细
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Flow_No">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.PayWayName">
+            <summary>
+            支付方式名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Terminal">
+            <summary>
+            枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Qty">
+            <summary>
+            升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Money">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Money_Sale">
+            <summary>
+            销售金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowDetail.Mach_Time">
+            <summary>
+            加油时间
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeShiftNowByOil">
+            <summary>
+            本班营业量按油品统计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByOil.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByOil.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByOil.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByOil.SumQty">
+            <summary>
+            升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByOil.SumMoney">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeShiftNowByTerminal">
+            <summary>
+            本班营业量按油枪统计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByTerminal.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByTerminal.Terminal">
+            <summary>
+            油枪编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByTerminal.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByTerminal.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByTerminal.SumQty">
+            <summary>
+            升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeShiftNowByTerminal.SumMoney">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.ShiftInfo">
+            <summary>
+            当班信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.ShiftInfo.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.ShiftInfo.Buss_Date">
+            <summary>
+            商务日起
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.ShiftInfo.Shift_No">
+            <summary>
+            班号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TankAlarm">
+            <summary>
+            油罐报警纪录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Buss_Date">
+            <summary>
+            商务日期
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Shift_No">
+            <summary>
+            班号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Tank_No">
+            <summary>
+            油罐
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Oil_Code">
+            <summary>
+            油品
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Alarm_Type">
+            <summary>
+            报警乐星
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Emp_No">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Start_Time">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.End_Time">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Water_Height">
+            <summary>
+            水高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Oil_Height">
+            <summary>
+            油高
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TankAlarm.Oil_Temp">
+            <summary>
+            油温
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.Trade">
+            <summary>
+            加油交易
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Flow_No">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Buss_Date">
+            <summary>
+            商务日起
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Shift_No">
+            <summary>
+            班号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Terminal">
+            <summary>
+            枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Oil_Name">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Price">
+            <summary>
+            价格
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Qty">
+            <summary>
+            升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Money_Sale">
+            <summary>
+            加油原额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Money">
+            <summary>
+            加油金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Bal">
+            <summary>
+            卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Pay_Way">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Way_Name">
+            <summary>
+            支付方式名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Emp_No">
+            <summary>
+            员工编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Emp_Name">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.Mach_Time">
+            <summary>
+            加油时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Trade.AccName">
+            <summary>
+            账户名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeQuery">
+            <summary>
+            交易查询条件
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.BeginTime">
+            <summary>
+            加油开始时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.EndTime">
+            <summary>
+            加油结束时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.BussDate">
+            <summary>
+            商务日起
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.ShiftNo">
+            <summary>
+            班号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.OilCode">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.Terminal">
+            <summary>
+            油枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.Payway">
+            <summary>
+            支付方式编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.CardType">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.TradeType">
+            <summary>
+            交易类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.EmpNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeQuery.SysTrade">
+            <summary>
+            是否包含系统交易
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeSumByTradeType">
+            <summary>
+            加油统计按照交易类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTradeType.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTradeType.TradeType">
+            <summary>
+            交易类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTradeType.TradeTypeName">
+            <summary>
+            交易类型名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTradeType.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTradeType.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeSumByCard">
+            <summary>
+            加油统计按照卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCard.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCard.Card_no">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCard.AccName">
+            <summary>
+            所属单位名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCard.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCard.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeSumByCardType">
+            <summary>
+            加油统计按照卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCardType.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCardType.Card_Type">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCardType.CardTypeName">
+            <summary>
+            卡类型名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCardType.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByCardType.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeSumByEmpNo">
+            <summary>
+            加油统计按照员工
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByEmpNo.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByEmpNo.Emp_No">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByEmpNo.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByEmpNo.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeSumByOil">
+            <summary>
+            加油统计按照油品
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByOil.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByOil.Oil_Code">
+            <summary>
+            油品
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByOil.Oil_Name">
+             <summary>
+            油品名称
+             </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByOil.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByOil.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeSumByTerminal">
+            <summary>
+            加油统计按照枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTerminal.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTerminal.Terminal">
+            <summary>
+            逻辑枪号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTerminal.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByTerminal.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.TradeSumByPayWay">
+            <summary>
+            加油统计按照结算方式
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByPayWay.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByPayWay.Pay_Way">
+            <summary>
+            结算方式编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByPayWay.Way_Name">
+            <summary>
+            结算方式名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByPayWay.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.TradeSumByPayWay.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.Rpt_Day_OilTank">
+            <summary>
+            综合日报表
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.Oil_Code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.Buss_Date">
+            <summary>
+            商务日期
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.SJMoneys">
+            <summary>
+            试机
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.XJMoneys">
+            <summary>
+            现金
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.YPMoneys">
+            <summary>
+            邮票
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.YHKMoneys">
+            <summary>
+            银行卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.XYKMoneys">
+            <summary>
+            信用卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.JZMoneys">
+            <summary>
+            记账
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.QTMoneys">
+            <summary>
+            其他
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.QT1Moneys">
+            <summary>
+            其他1
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.TotalQtys">
+            <summary>
+            全部升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.TotalMoneys">
+            <summary>
+            全部金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.MonthQtys">
+            <summary>
+            本月加油
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.End_li">
+            <summary>
+            结束存量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.Rpt_Day_OilTank.CanAdd">
+            <summary>
+            可添百分比
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.EmpCard">
+            <summary>
+            员工卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCard.Emp_Name">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCard.Emp_No">
+            <summary>
+            员工工号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCard.Card_No">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCard.CerNo">
+            <summary>
+            证件编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCard.StationNo">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.EmpCardBill">
+            <summary>
+            对账单
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCardBill.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCardBill.EmpName">
+            <summary>
+            员工姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCardBill.Begin_Balance">
+            <summary>
+            期初余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCardBill.End_Balance">
+            <summary>
+            期末余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCardBill.SaveMoney">
+            <summary>
+            储值金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCardBill.UnSaveMoney">
+            <summary>
+            扣款金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Station.EmpCardBill.UseMoney">
+            <summary>
+            消费金额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Station.IStationRepository">
+            <summary>
+            油站数据仓储操作接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTankStor(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油油罐状态
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="oilCode"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetRptDayByMach(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按枪号
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetRptDayByOil(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油品
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetRptDayByTank(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油罐
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetRptDayByEmpQty(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员加油量
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetRptDayByEmpMoney(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员金额
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetOilAddRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取卸油记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetStationTanks(System.String)">
+            <summary>
+            获取油站的油罐信息
+            </summary>
+            <param name="stationNo"></param>    
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetOilChangeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油品信息修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetMachineRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油机信息记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTankRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油罐信息记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetOperLog(System.String,System.String,System.String)">
+            <summary>
+            获取操作员日志
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTankShift(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油罐库存记录(班报)
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeShiftNowDetail(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油明细
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeShiftNowByOil(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油量按油品统计
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeShiftNowByTerminal(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油量按油枪统计
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetShiftNow(System.String)">
+            <summary>
+            获取当前班信息
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTankAlarm(System.String,System.String,System.String)">
+            <summary>
+            获取油罐报警记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTrades(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeSumByTradeType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照交易类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeSumByCard(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeSumByCardType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeSumByEmpNo(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照员工
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeSumByOil(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照油品
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeSumByTerminal(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照枪号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetTradeSumByPayWay(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照结算方式
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetRptDayOilTank(System.String)">
+            <summary>
+            查询加油站综合日报表
+            </summary>
+            <param name="bussDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetEmpCard(System.String)">
+            <summary>
+            查询员工卡
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.IStationRepository.GetEmpCardBill(System.String,System.String,System.String)">
+            <summary>
+            查询员工卡对账单
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Station.StationRepository">
+            <summary>
+            用户卡数据仓储接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTankStor(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油罐状态记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="oilCode"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetRptDayByMach(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按枪号
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetRptDayByOil(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油品
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetRptDayByTank(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油罐
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetRptDayByEmpQty(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员加油量
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetRptDayByEmpMoney(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员金额
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetOilAddRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取卸油记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetStationTanks(System.String)">
+            <summary>
+            获取油站的油罐信息
+            </summary>
+            <param name="stationNo"></param>    
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetOilChangeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油品信息修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetMachineRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油机信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTankRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油罐信息记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetOperLog(System.String,System.String,System.String)">
+            <summary>
+            获取操作员日志
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTankShift(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油罐库存记录(班报)
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeShiftNowDetail(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油明细
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeShiftNowByOil(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油量按油品统计
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeShiftNowByTerminal(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油量按油枪统计
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetShiftNow(System.String)">
+            <summary>
+            获取当班信息
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTankAlarm(System.String,System.String,System.String)">
+            <summary>
+            获取油罐报警记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeQuerySqlWhere(CS.Img.Station.TradeQuery)">
+            <summary>
+            获取交易符合查询的 where条件组合
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeQuerySqlParams(CS.Img.Station.TradeQuery)">
+            <summary>
+            获取交易符合查询的 SqlParams
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTrades(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeSumByTradeType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照交易类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeSumByCard(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeSumByCardType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeSumByEmpNo(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照员工
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeSumByOil(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照油品
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeSumByTerminal(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照枪号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetTradeSumByPayWay(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照结算方式
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetRptDayOilTank(System.String)">
+            <summary>
+            查询加油站综合日报表
+            </summary>
+            <param name="bussDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetEmpCard(System.String)">
+            <summary>
+            查询员工卡
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationRepository.GetEmpCardBill(System.String,System.String,System.String)">
+            <summary>
+            查询员工卡对账单
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.#ctor(CS.Img.Station.IStationRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTankStor(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油罐监控记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="oilCode"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetRptDayByMach(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按枪号
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetRptDayByOil(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油品
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetRptDayByTank(System.String,System.String,System.String)">
+            <summary>
+            获取油站日报按油罐
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetRptDayByEmpQty(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员加油量
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetRptDayByEmpMoney(System.String,System.String,System.String)">
+            <summary>
+            油站日报按加油员金额
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetOilAddRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取卸油记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetStationTanks(System.String)">
+            <summary>
+            获取油站的油罐信息
+            </summary>
+            <param name="stationNo"></param>    
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetOilChangeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油品信息修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetMachineRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油机信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTankRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油罐信息记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetOperLog(System.String,System.String,System.String)">
+            <summary>
+            获取操作员日志
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTankShift(System.String,System.String,System.String,System.String)">
+            <summary>
+            获取油罐库存记录(班报)
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="tankNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeShiftNowDetail(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油明细
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeShiftNowByOil(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            TradeShiftNowByOil
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeShiftNowByTerminal(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+            获取本班加油量按油枪统计
+            </summary>    
+            <param name="BussDate"></param>
+            <param name="ShiftNo"></param>
+            <param name="stationNo"></param>
+            <param name="PayWay"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetShiftNow(System.String)">
+            <summary>
+            获取当班信息
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTankAlarm(System.String,System.String,System.String)">
+            <summary>
+            获取油罐报警记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTrades(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeSumByTradeType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照交易类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeSumByCard(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeSumByCardType(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照卡类型
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeSumByEmpNo(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照员工
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeSumByOil(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照油品
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeSumByTerminal(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照枪号
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetTradeSumByPayWay(CS.Img.Station.TradeQuery)">
+            <summary>
+            查询加油统计按照结算方式
+            </summary>
+            <param name="tradeQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetRptDayOilTank(System.String)">
+            <summary>
+            查询加油站综合日报表
+            </summary>
+            <param name="bussDate"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetEmpCard(System.String)">
+            <summary>
+            查询员工卡
+            </summary>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Station.StationService.GetEmpCardBill(System.String,System.String,System.String)">
+            <summary>
+            查询员工卡对账单
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

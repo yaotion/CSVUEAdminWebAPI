@@ -1,0 +1,295 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.RetailType</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.RetailType.RetailTypeController">
+            <summary>
+            储值赠送信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeController.GetRetailTypeList">
+            <summary>
+            获取散户类型信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeController.AddRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            添加散户类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeController.UpdateRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            修改散户类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeController.DeleteRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            删除散户类型
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeController.GetRetailTypeCardList(System.Int32)">
+            <summary>
+            获取散户类型信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeController.BatUpdateCardRetailType(CS.Img.RetailType.UpdateCards)">
+            <summary>
+            获取散户类型信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.RetailType.RetailType">
+            <summary>
+            散户类型信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.RetailType.RetailType.RetailTypeID">
+            <summary>
+            散户类型编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.RetailType.RetailType.RetailTypeName">
+            <summary>
+            散户类型名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.RetailType.RetailTypeCard">
+            <summary>
+            卡信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.RetailType.RetailTypeCard.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.RetailType.RetailTypeCard.HolderName">
+            <summary>
+            持卡人姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.RetailType.RetailTypeCard.Mobile">
+            <summary>
+            手机号
+            </summary>
+        </member>
+        <member name="P:CS.Img.RetailType.RetailTypeCard.RetailTypeID">
+            <summary>
+            散户类型编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.RetailType.RetailTypeCard.RetailTypeName">
+            <summary>
+            散户类型名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.RetailType.RetailTypeRepository">
+            <summary>
+            储值赠送信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeRepository.GetRetailTypeList">
+            <summary>
+            获取散户类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeRepository.AddRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            添加散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeRepository.UpdateRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            修改散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeRepository.DeleteRetailType(System.Int32)">
+            <summary>
+            删除散户类型
+            </summary>
+            <param name="retailTypeID"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeRepository.GetRetailTypeCardList(System.Int32)">
+            <summary>
+            获取指定散户类型的卡信息
+            </summary>
+            <param name="retailTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeRepository.UpdateCardRetailType(System.Int32,System.String)">
+            <summary>
+            修改散户卡的级别
+            </summary>
+            <param name="retailTypeID"></param>
+            <param name="cardNo"></param>
+        </member>
+        <member name="T:CS.Img.RetailType.IRetailTypeRepository">
+            <summary>
+            散户类型信息Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.RetailType.IRetailTypeRepository.GetRetailTypeList">
+            <summary>
+            获取散户类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.IRetailTypeRepository.AddRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            添加散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.IRetailTypeRepository.UpdateRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            修改散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.IRetailTypeRepository.DeleteRetailType(System.Int32)">
+            <summary>
+            删除散户类型
+            </summary>
+            <param name="retailTypeID"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.IRetailTypeRepository.GetRetailTypeCardList(System.Int32)">
+            <summary>
+            获取指定散户类型的卡信息
+            </summary>
+            <param name="retailTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.IRetailTypeRepository.UpdateCardRetailType(System.Int32,System.String)">
+            <summary>
+            修改散户卡的级别
+            </summary>
+            <param name="retailTypeID"></param>
+            <param name="cardNo"></param>
+        </member>
+        <member name="T:CS.Img.RetailType.RetailTypeApp">
+            <summary>
+            散户类型信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeApp.#ctor(CS.Img.RetailType.IRetailTypeService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeApp.GetRetailTypeList">
+            <summary>
+            获取散户类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeApp.AddRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            添加散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeApp.UpdateRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            修改散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeApp.DeleteRetailType(System.Int32)">
+            <summary>
+            删除散户类型
+            </summary>
+            <param name="retailTypeID"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeApp.GetRetailTypeCardList(System.Int32)">
+            <summary>
+            获取指定散户类型的卡信息
+            </summary>
+            <param name="retailTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeApp.UpdateCardRetailType(System.Int32,System.String)">
+            <summary>
+            修改散户卡的级别
+            </summary>
+            <param name="retailTypeID"></param>
+            <param name="cardNo"></param>
+        </member>
+        <member name="T:CS.Img.RetailType.IRetailTypeApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.RetailType.RetailTypeService">
+            <summary>
+            散户类型信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeService.#ctor(CS.Img.RetailType.IRetailTypeRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeService.GetRetailTypeList">
+            <summary>
+            获取散户类型列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeService.AddRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            添加散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeService.UpdateRetailType(CS.Img.RetailType.RetailType)">
+            <summary>
+            修改散户类型
+            </summary>
+            <param name="retailType"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeService.DeleteRetailType(System.Int32)">
+            <summary>
+            删除散户类型
+            </summary>
+            <param name="retailTypeID"></param>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeService.GetRetailTypeCardList(System.Int32)">
+            <summary>
+            获取指定散户类型的卡信息
+            </summary>
+            <param name="retailTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.RetailType.RetailTypeService.UpdateCardRetailType(System.Int32,System.String)">
+            <summary>
+            修改散户卡的级别
+            </summary>
+            <param name="retailTypeID"></param>
+            <param name="cardNo"></param>
+        </member>
+        <member name="T:CS.Img.RetailType.IRetailTypeService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+    </members>
+</doc>

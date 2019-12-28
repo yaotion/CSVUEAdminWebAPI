@@ -1,0 +1,800 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.PriceSystem</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.PriceSystem.PriceSystemController">
+            <summary>
+            价格策略信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.GetPriceSetList">
+            <summary>
+            获取价格体系信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.AddPriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            添加价格体系
+            </summary>
+            <param name="priceSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.UpdatePriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            修改价格体系
+            </summary>
+            <param name="priceSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.DeletePriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            删除价格体系
+            </summary>
+            <param name="priceSet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.GetPriceContentList(System.Int32)">
+            <summary>
+            获取价格策略信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.AddPriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            添加价格策略
+            </summary>
+            <param name="priceContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.UpdatePriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            修改价格策略
+            </summary>
+            <param name="priceContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.DeletePriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            删除价格策略
+            </summary>
+            <param name="priceContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.GetPriceStationList(System.Int32)">
+            <summary>
+            获取价格体系限制油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.SetPriceStation(CS.Img.PriceSystem.PriceStationSet)">
+            <summary>
+            设置价格体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.GetPriceContentOilList(System.Int32)">
+            <summary>
+            获取价格体系限制油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemController.SetPriceContentOil(CS.Img.PriceSystem.PriceContentOilSet)">
+            <summary>
+            设置价格体系适用油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceSet">
+            <summary>
+            价格体系信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceSet.PriceSetNo">
+            <summary>
+            体系编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceSet.PriceSetName">
+            <summary>
+            体系名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceSet.UseTime">
+            <summary>
+            生效时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceSet.PriceUse">
+            <summary>
+            是否生效
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceSet.ContentSum">
+            <summary>
+            包含策略数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceSet.InfoSum">
+            <summary>
+            包含信息数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceSet.IUpdateFlag">
+            <summary>
+            更新标志
+            </summary>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceContent">
+            <summary>
+            价格体系信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.ContentNo">
+            <summary>
+            策略编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.PriceSetNo">
+            <summary>
+            所属体系编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.ContentName">
+            <summary>
+            策略名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.ContentUse">
+            <summary>
+            策略是否启用
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.ContentType">
+            <summary>
+            策略类型1、不限时间，2限日期区间，3限小时区间
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.StartHour">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.EndHour">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.PerDay">
+            <summary>
+            每天
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.PerMonth">
+            <summary>
+            每月
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContent.IUpdateFlag">
+            <summary>
+            更新标志
+            </summary>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceStation">
+            <summary>
+            价格体系使用油站
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStation.PriceSetNo">
+            <summary>
+            所属价格体系
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStation.PriceStationNo">
+            <summary>
+            体系限于油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStation.StationName">
+            <summary>
+            油站名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStation.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStation.PUBflag">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStation.IUpdateFlag">
+            <summary>
+            更新标志
+            </summary>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceStationSet">
+            <summary>
+            油站设置信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStationSet.PriceSetNo">
+            <summary>
+            所属价格体系
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStationSet.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStationSet.StationName">
+            <summary>
+            油站名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceStationSet.SetFlag">
+            <summary>
+            设置标志，0=取消，1=设置
+            </summary>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceContentOil">
+            <summary>
+            价格策略油品
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOil.PriceInfoNo">
+            <summary>
+            记录编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOil.PriceSetContent">
+            <summary>
+            所属策略编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOil.OilCode">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOil.OilName">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOil.NewPrice">
+            <summary>
+            新单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOil.OldPrice">
+            <summary>
+            老单价
+            </summary>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceContentOilSet">
+            <summary>
+            策略油品设置信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOilSet.PriceSetContent">
+            <summary>
+            所属价格体系
+            </summary>
+        </member>
+        <!-- 对于成员“P:CS.Img.PriceSystem.PriceContentOilSet.OilCode”忽略有格式错误的 XML 注释 -->
+        <member name="P:CS.Img.PriceSystem.PriceContentOilSet.OilName">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOilSet.NewPrice">
+            <summary>
+            新单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.PriceSystem.PriceContentOilSet.SetFlag">
+            <summary>
+            设置标志，0=取消，1=设置
+            </summary>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceSystemRepository">
+            <summary>
+            储值赠送信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.GetPriceSetList">
+            <summary>
+            获取价格体系列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.AddPriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            添加价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.UpdatePriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            修改价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.DeletePriceSet(System.Int32)">
+            <summary>
+            删除价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.GetPriceContentList(System.Int32)">
+            <summary>
+            获取价格策略列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.ClearPriceContent(System.Int32)">
+            <summary>
+            清除价格体系内得所有策略
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.AddPriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            添加价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.UpdatePriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            修改价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.DeletePriceContent(System.Int32)">
+            <summary>
+            删除价格策略
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.GetPriceStationList(System.Int32)">
+            <summary>
+            获取体系内油站列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.DeletePriceStation(System.Int32,System.String)">
+            <summary>
+            设置体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.AddPriceStation(System.Int32,System.String,System.String)">
+            <summary>
+            添加体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.ClearPriceStation(System.Int32)">
+            <summary>
+            清除价格体系内得所有站点
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.GetPriceContentOilList(System.Int32)">
+            <summary>
+            获取策略油品价格信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.DeletePriceContentOil(System.Int32,System.String)">
+            <summary>
+            删除策略内油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.AddPriceContentOil(System.Int32,System.String,System.String,System.Decimal)">
+            <summary>
+            添加策略内油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.ClearPriceSetOil(System.Int32)">
+            <summary>
+            清除价格体系内得所有油品
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemRepository.ClearPirceContentOil(System.Int32)">
+            <summary>
+            清除价格策略得油品信息
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="T:CS.Img.PriceSystem.IPriceSystemRepository">
+            <summary>
+            价格体系Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.GetPriceSetList">
+            <summary>
+            获取价格体系列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.AddPriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            添加价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.UpdatePriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            修改价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.DeletePriceSet(System.Int32)">
+            <summary>
+            删除价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.GetPriceContentList(System.Int32)">
+            <summary>
+            获取价格策略列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.ClearPriceContent(System.Int32)">
+            <summary>
+            清除价格体系内得所有策略
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.AddPriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            添加价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.UpdatePriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            修改价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.DeletePriceContent(System.Int32)">
+            <summary>
+            删除价格策略
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.GetPriceStationList(System.Int32)">
+            <summary>
+            获取体系内油站列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.DeletePriceStation(System.Int32,System.String)">
+            <summary>
+            删除体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.AddPriceStation(System.Int32,System.String,System.String)">
+            <summary>
+            添加体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.ClearPriceStation(System.Int32)">
+            <summary>
+            清除价格体系内得所有站点
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.GetPriceContentOilList(System.Int32)">
+            <summary>
+            获取策略油品价格信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.DeletePriceContentOil(System.Int32,System.String)">
+            <summary>
+            删除策略内油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.AddPriceContentOil(System.Int32,System.String,System.String,System.Decimal)">
+            <summary>
+            添加策略内油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.ClearPriceSetOil(System.Int32)">
+            <summary>
+            清除价格体系内得所有油品
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.IPriceSystemRepository.ClearPirceContentOil(System.Int32)">
+            <summary>
+            清除价格策略得油品信息
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceSystemApp">
+            <summary>
+            散户类型信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.#ctor(CS.Img.PriceSystem.IPriceSystemService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.GetPriceSetList">
+            <summary>
+            获取价格体系列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.AddPriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            添加价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.UpdatePriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            修改价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.DeletePriceSet(System.Int32)">
+            <summary>
+            删除价格体系
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.GetPriceContentList(System.Int32)">
+            <summary>
+            获取价格策略列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.ClearPriceContent(System.Int32)">
+            <summary>
+            清除价格体系内得所有策略
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.AddPriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            添加价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.UpdatePriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            修改价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.DeletePriceContent(System.Int32)">
+            <summary>
+            删除价格策略
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.GetPriceStationList(System.Int32)">
+            <summary>
+            获取体系内油站列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.DeletePriceStation(System.Int32,System.String)">
+            <summary>
+            设置体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.AddPriceStation(System.Int32,System.String,System.String)">
+            <summary>
+            添加体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.SetPriceStation(CS.Img.PriceSystem.PriceStationSet)">
+            <summary>
+            设置价格体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.ClearPriceStation(System.Int32)">
+            <summary>
+            清除价格体系内得所有站点
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.GetPriceContentOilList(System.Int32)">
+            <summary>
+            获取策略油品价格信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.DeletePriceContentOil(System.Int32,System.String)">
+            <summary>
+            删除策略内油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.AddPriceContentOil(System.Int32,System.String,System.String,System.Decimal)">
+            <summary>
+            添加策略内油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.SetPriceContentOil(CS.Img.PriceSystem.PriceContentOilSet)">
+            <summary>
+            设置价格体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.ClearPriceSetOil(System.Int32)">
+            <summary>
+            清除价格体系内得所有油品
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemApp.ClearPirceContentOil(System.Int32)">
+            <summary>
+            清除价格策略得油品信息
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="T:CS.Img.PriceSystem.IPriceSystemApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.PriceSystem.PriceSystemService">
+            <summary>
+            价格体系信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.#ctor(CS.Img.PriceSystem.IPriceSystemRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.GetPriceSetList">
+            <summary>
+            获取价格体系列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.AddPriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            添加价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.UpdatePriceSet(CS.Img.PriceSystem.PriceSet)">
+            <summary>
+            修改价格体系
+            </summary>
+            <param name="priceSet"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.DeletePriceSet(System.Int32)">
+            <summary>
+            删除价格体系
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.GetPriceContentList(System.Int32)">
+            <summary>
+            获取价格策略列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.ClearPriceContent(System.Int32)">
+            <summary>
+            清除价格体系内得所有策略
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.AddPriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            添加价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.UpdatePriceContent(CS.Img.PriceSystem.PriceContent)">
+            <summary>
+            修改价格策略
+            </summary>
+            <param name="priceContent"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.DeletePriceContent(System.Int32)">
+            <summary>
+            删除价格策略
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.GetPriceStationList(System.Int32)">
+            <summary>
+            获取体系内油站列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.DeletePriceStation(System.Int32,System.String)">
+            <summary>
+            设置体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.AddPriceStation(System.Int32,System.String,System.String)">
+            <summary>
+            添加体系适用油站
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.ClearPriceStation(System.Int32)">
+            <summary>
+            清除价格体系内得所有站点
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.GetPriceContentOilList(System.Int32)">
+            <summary>
+            获取策略油品价格信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.DeletePriceContentOil(System.Int32,System.String)">
+            <summary>
+            删除策略内油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.AddPriceContentOil(System.Int32,System.String,System.String,System.Decimal)">
+            <summary>
+            添加策略内油品信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.ClearPriceSetOil(System.Int32)">
+            <summary>
+            清除价格体系内得所有油品
+            </summary>
+            <param name="priceSetNo"></param>
+        </member>
+        <member name="M:CS.Img.PriceSystem.PriceSystemService.ClearPirceContentOil(System.Int32)">
+            <summary>
+            清除价格策略得油品信息
+            </summary>
+            <param name="priceContentNo"></param>
+        </member>
+        <member name="T:CS.Img.PriceSystem.IPriceSystemService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+    </members>
+</doc>

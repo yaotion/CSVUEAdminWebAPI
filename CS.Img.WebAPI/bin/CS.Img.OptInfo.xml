@@ -1,0 +1,517 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.OptInfo</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.OptInfo.OptInfoController">
+            <summary>
+            操作员信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.GetOptInfoList">
+            <summary>
+            获取操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.UpdateOptInfo(CS.Img.OptInfo.OptInfoUpdate)">
+            <summary>
+            修改操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.AddOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            添加操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.DeleteOptInfo(CS.Img.OptInfo.OptInfoUpdate)">
+            <summary>
+            添加操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.UpdateOptPassword(CS.Img.OptInfo.OptInfoResetPWD)">
+            <summary>
+            添加操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.GetSystemFunctionList">
+            <summary>
+            获取全部功能
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.GetOptFunctionList(System.String)">
+            <summary>
+            获取操作员的功能
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoController.UpdateOptFunctionList(CS.Img.OptInfo.OptFuntionList)">
+            <summary>
+            修改操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.OptInfo.IOptInfoRepository">
+            <summary>
+            操作员信息Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.GetOptInfoList">
+            <summary>
+            获取操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.UpdateOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            修改操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.AddOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            添加操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.DeleteOptInfo(System.String)">
+            <summary>
+            删除操作员
+            </summary>
+            <param name="optNo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.ResetOptPWD(System.String,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="optNo"></param>
+            <param name="newPWD"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.GetOptPWD(System.String)">
+            <summary>
+            获取操作员密码
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.GetSystemFunctionList">
+            <summary>
+            获取全部功能列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.GetOptFunctionList(System.String)">
+            <summary>
+            获取操作员的权限
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.AddOptFunctionList(System.String,CS.Img.OptInfo.SystemFunction)">
+            <summary>
+            设置操作员功能
+            </summary>
+            <param name="optNo"></param>
+            <param name="systemFunctions"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.IOptInfoRepository.ClearOptFunctionList(System.String)">
+            <summary>
+            清除操作员功能
+            </summary>
+            <param name="optNo"></param>
+        </member>
+        <member name="T:CS.Img.OptInfo.OptInfo">
+            <summary>
+            操作员信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.OptName">
+            <summary>
+            操作员姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.OptLevel">
+            <summary>
+            级别
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.Pin">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.UseFlag">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.SuperFlag">
+            <summary>
+            是否超级管理员
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.StationNo">
+            <summary>
+            所属油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.StationName">
+            <summary>
+            所属站点名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.CardNo">
+            <summary>
+            管理卡卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfo.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="T:CS.Img.OptInfo.OptInfoUpdate">
+            <summary>
+            操作员修改信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfoUpdate.ResetPWD">
+            <summary>
+            是否重置密码0:否,1:是
+            </summary>
+        </member>
+        <member name="T:CS.Img.OptInfo.OptInfoResetPWD">
+            <summary>
+            操作员重置密码
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfoResetPWD.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfoResetPWD.OptName">
+            <summary>
+            操作员姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfoResetPWD.OldPassword">
+            <summary>
+            旧密码
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptInfoResetPWD.NewPassword">
+            <summary>
+            新密码
+            </summary>
+        </member>
+        <member name="T:CS.Img.OptInfo.SystemFunction">
+            <summary>
+            系统功能列表
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.SystemFunction.FunctionNo">
+            <summary>
+            功能编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.SystemFunction.FunctionType">
+            <summary>
+            功能类型(0:中心报表,1:发卡点报表)
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.SystemFunction.FunctionName">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.OptInfo.OptFuntionList">
+            <summary>
+            操作员的权限列表
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptFuntionList.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.OptInfo.OptFuntionList.FunctionList">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="T:CS.Img.OptInfo.OptInfoRepository">
+            <summary>
+            操作员信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.GetOptInfoList">
+            <summary>
+            获取所有操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.GetOptPWD(System.String)">
+            <summary>
+            获取操作员密码
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.UpdateOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            修改操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.AddOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            添加操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.DeleteOptInfo(System.String)">
+            <summary>
+            删除操作员
+            </summary>
+            <param name="optNo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.ResetOptPWD(System.String,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="optNo"></param>
+            <param name="newPWD"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.GetSystemFunctionList">
+            <summary>
+            获取全部功能列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.GetOptFunctionList(System.String)">
+            <summary>
+            获取操作员的权限
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.AddOptFunctionList(System.String,CS.Img.OptInfo.SystemFunction)">
+            <summary>
+            设置操作员功能
+            </summary>
+            <param name="optNo"></param>
+            <param name="systemFunctions"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoRepository.ClearOptFunctionList(System.String)">
+            <summary>
+            清除操作员功能
+            </summary>
+            <param name="optNo"></param>
+        </member>
+        <member name="T:CS.Img.OptInfo.IOptInfoApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.OptInfo.OptInfoApp">
+            <summary>
+            操作员信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.#ctor(CS.Img.OptInfo.IOptInfoService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.GetOptInfoList">
+            <summary>
+            获取操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.GetOptPWD(System.String)">
+            <summary>
+            获取操作员密码
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.UpdateOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            修改操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.ResetOptPWD(System.String,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="optNo"></param>
+            <param name="newPWD"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.TransPWD(System.String)">
+            <summary>
+            转换密码
+            </summary>
+            <param name="strText"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.UpdateOptPassword(CS.Img.OptInfo.OptInfoResetPWD)">
+            <summary>
+            修改操作员的密码
+            </summary>
+            <param name="optInfoResetPWD"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.UpdateOptInfoLogic(CS.Img.OptInfo.OptInfoUpdate)">
+            <summary>
+            修改操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.AddOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            添加操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.DeleteOptInfo(System.String)">
+            <summary>
+            删除操作员
+            </summary>
+            <param name="optNo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.GetSystemFunctionList">
+            <summary>
+            获取全部功能列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.GetOptFunctionList(System.String)">
+            <summary>
+            获取操作员的权限
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.AddOptFunctionList(System.String,CS.Img.OptInfo.SystemFunction)">
+            <summary>
+            设置操作员功能
+            </summary>
+            <param name="optNo"></param>
+            <param name="systemFunctions"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.ClearOptFunctionList(System.String)">
+            <summary>
+            清除操作员功能
+            </summary>
+            <param name="optNo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoApp.UpdateOptFunctionList(System.String,System.Collections.Generic.List{CS.Img.OptInfo.SystemFunction})">
+            <summary>
+            批量修改操作员的权限
+            </summary>
+            <param name="optNo"></param>
+            <param name="systemFunctions"></param>
+        </member>
+        <member name="T:CS.Img.OptInfo.IOptInfoService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+        <member name="T:CS.Img.OptInfo.OptInfoService">
+            <summary>
+            操作员信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.#ctor(CS.Img.OptInfo.IOptInfoRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.GetOptInfoList">
+            <summary>
+            获取操作员信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.UpdateOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            修改操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.AddOptInfo(CS.Img.OptInfo.OptInfo)">
+            <summary>
+            添加操作员
+            </summary>
+            <param name="optInfo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.ResetOptPWD(System.String,System.String)">
+            <summary>
+            重置密码
+            </summary>
+            <param name="optNo"></param>
+            <param name="newPWD"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.DeleteOptInfo(System.String)">
+            <summary>
+            删除操作员
+            </summary>
+            <param name="optNo"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.GetOptPWD(System.String)">
+            <summary>
+            获取操作员密码
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.GetSystemFunctionList">
+            <summary>
+            获取全部功能列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.GetOptFunctionList(System.String)">
+            <summary>
+            获取操作员的权限
+            </summary>
+            <param name="optNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.AddOptFunctionList(System.String,CS.Img.OptInfo.SystemFunction)">
+            <summary>
+            设置操作员功能
+            </summary>
+            <param name="optNo"></param>
+            <param name="systemFunctions"></param>
+        </member>
+        <member name="M:CS.Img.OptInfo.OptInfoService.ClearOptFunctionList(System.String)">
+            <summary>
+            清除操作员功能
+            </summary>
+            <param name="optNo"></param>
+        </member>
+    </members>
+</doc>

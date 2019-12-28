@@ -1,0 +1,1049 @@
+15:55:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[0].[POST]=>http://127.0.0.1:8888/api/deposit/depositContentAdd
+15:55:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[0].[Exception]
+15:55:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[0].[http://127.0.0.1:8888/api/deposit/depositContentAdd]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.Deposit.DepositRepository.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 155
+   在 CS.Img.Deposit.DepositService.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 110
+   在 CS.Img.Deposit.DepositApp.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 117
+   在 CS.Img.Deposit.DepositController.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 119
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+15:55:45[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 列名 'StationLst' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.Deposit.DepositRepository.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 155
+   在 CS.Img.Deposit.DepositService.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 110
+   在 CS.Img.Deposit.DepositApp.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 117
+   在 CS.Img.Deposit.DepositController.AddContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 119
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:6ea2562e-cea9-42f2-bf0d-756a7ed10b22
+Error Number:207,State:1,Class:16
+16:12:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[1].[POST]=>http://127.0.0.1:8888/api/deposit/depositContentAdd
+16:12:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[1].[OK]
+16:14:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[0].[POST]=>http://127.0.0.1:8888/api/deposit/depositContentAdd
+16:14:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[0].[OK]
+16:24:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[1].[POST]=>http://127.0.0.1:8888/api/deposit/depositContentUpdate
+16:24:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[1].[OK]
+16:38:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[2].[POST]=>http://127.0.0.1:8888/api/deposit/depositContentUpdate
+16:38:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[2].[Exception]
+16:38:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[2].[http://127.0.0.1:8888/api/deposit/depositContentUpdate]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.Deposit.DepositRepository.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 181
+   在 CS.Img.Deposit.DepositService.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 118
+   在 CS.Img.Deposit.DepositApp.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 125
+   在 CS.Img.Deposit.DepositController.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 133
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+16:38:08[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'accno'，表 'ImgCenterJJGC.dbo.UserDepositActContent'；列不允许有 Null 值。UPDATE 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 3397
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1346
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1221
+   在 UnitOfWorkWithDapper.Core.DapperContext.Execute(String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 148
+   在 CS.Img.Deposit.DepositRepository.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 181
+   在 CS.Img.Deposit.DepositService.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 118
+   在 CS.Img.Deposit.DepositApp.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 125
+   在 CS.Img.Deposit.DepositController.UpdateContent(DepositContent content) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 133
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:952aa70f-6a61-4c4e-be80-f9bdbb8790fa
+Error Number:515,State:2,Class:16
+16:38:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[3].[POST]=>http://127.0.0.1:8888/api/deposit/depositContentDelete
+16:38:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[3].[OK]
+18:49:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[POST]=>http://127.0.0.1:8888/api/user/login
+18:49:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+18:49:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[1].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+18:49:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[1].[OK]
+18:49:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?stationNo=&stationType=
+18:49:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?stationNo=&stationType=
+18:49:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?stationNo=&stationType=
+18:49:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+18:49:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+18:49:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+18:56:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[5].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+18:56:52[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[5].[OK]
+18:56:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[6].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?stationNo=&stationType=
+18:56:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[7].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?stationNo=&stationType=
+18:56:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[8].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?stationNo=&stationType=
+18:56:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[8].[OK]
+18:56:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[8].[OK]
+18:56:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[8].[OK]
+19:03:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[9].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:03:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[9].[OK]
+19:03:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[10].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:03:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[11].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:03:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[12].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:03:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[13].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:03:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[13].[OK]
+19:03:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[13].[OK]
+19:03:17[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[13].[OK]
+19:03:18[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[13].[OK]
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[14].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[14].[OK]
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[15].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[15].[OK]
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[16].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[17].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[17].[OK]
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[17].[OK]
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[18].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[18].[OK]
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[19].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[19].[OK]
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[20].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[20].[OK]
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[21].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[22].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[23].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[23].[OK]
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[23].[OK]
+19:11:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[23].[OK]
+19:13:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[24].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:13:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[24].[OK]
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[25].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[25].[OK]
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[26].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[26].[OK]
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[27].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[28].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[28].[OK]
+19:13:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[28].[OK]
+19:16:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[29].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:16:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[29].[OK]
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[30].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[30].[OK]
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[31].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[32].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[33].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[33].[OK]
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[33].[OK]
+19:16:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[33].[OK]
+19:16:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[34].[POST]=>http://127.0.0.1:8888/api/deposit/depositActUpdate
+19:16:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[34].[OK]
+19:16:47[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[35].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:16:47[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[35].[OK]
+19:17:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[36].[POST]=>http://127.0.0.1:8888/api/deposit/depositActUpdate
+19:17:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[36].[OK]
+19:17:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[37].[POST]=>http://127.0.0.1:8888/api/deposit/depositActUpdate
+19:17:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[37].[OK]
+19:17:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[38].[POST]=>http://127.0.0.1:8888/api/deposit/depositActUpdate
+19:17:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[38].[OK]
+19:17:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[39].[POST]=>http://127.0.0.1:8888/api/deposit/depositActAdd
+19:17:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[39].[OK]
+19:18:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[40].[POST]=>http://127.0.0.1:8888/api/deposit/depositActDelete
+19:18:08[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[40].[OK]
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[41].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[41].[OK]
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[42].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[42].[OK]
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[43].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[44].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[45].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[45].[OK]
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[45].[OK]
+19:18:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[45].[OK]
+19:18:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[46].[POST]=>http://127.0.0.1:8888/api/deposit/depositActDelete
+19:18:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[46].[OK]
+19:18:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[47].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:18:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[47].[OK]
+19:18:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[48].[POST]=>http://127.0.0.1:8888/api/deposit/depositActAdd
+19:18:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[48].[OK]
+19:18:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[49].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:18:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[49].[OK]
+19:19:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[50].[POST]=>http://127.0.0.1:8888/api/deposit/depositActDelete
+19:19:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[50].[OK]
+19:19:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[51].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:19:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[51].[OK]
+19:20:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[52].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=10
+19:20:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[52].[OK]
+19:22:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[53].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:22:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[53].[OK]
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[54].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[54].[OK]
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[55].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[56].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[57].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[57].[OK]
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[57].[OK]
+19:22:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[57].[OK]
+19:22:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[58].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:22:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[58].[OK]
+19:37:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:37:14[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[1].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[2].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[4].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+19:37:15[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[4].[OK]
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[5].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[5].[OK]
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[6].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[6].[OK]
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[7].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[8].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[9].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[9].[OK]
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[9].[OK]
+19:37:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[9].[OK]
+19:40:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[10].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:40:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[10].[OK]
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[11].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[11].[OK]
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[12].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[13].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[14].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[14].[OK]
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[14].[OK]
+19:40:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[14].[OK]
+19:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[15].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:40:44[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[15].[OK]
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[16].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[16].[OK]
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[17].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[18].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[19].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[19].[OK]
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[19].[OK]
+19:40:45[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[19].[OK]
+19:43:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[20].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:43:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[20].[OK]
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[21].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[21].[OK]
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[22].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[23].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[24].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[24].[OK]
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[24].[OK]
+19:43:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[24].[OK]
+19:43:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[25].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:43:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[25].[Exception]
+19:43:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[25].[http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+19:43:58[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 '银卡' 转换成数据类型 int 时失败。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:70113d45-9e7c-4662-8b03-4321bf308eef
+Error Number:245,State:1,Class:16
+19:44:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[26].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:44:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[26].[Exception]
+19:44:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[26].[http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+19:44:16[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 '银卡' 转换成数据类型 int 时失败。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:8a2ca9ad-6191-4477-81f0-decec47b0fa9
+Error Number:245,State:1,Class:16
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[27].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[27].[Exception]
+19:44:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[27].[http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+19:44:23[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 '银卡' 转换成数据类型 int 时失败。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:71e63757-7313-4646-999d-663a365a068c
+Error Number:245,State:1,Class:16
+19:44:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[28].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:44:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[28].[Exception]
+19:44:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[WebApiRequest].[Exception].[28].[http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21]
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+19:44:58[ERROR]{CS.Img.WebAPI.Filters.NotImplExceptionFilterAttribute}-NotImplExceptionFilterAttribute
+System.Data.SqlClient.SqlException (0x80131904): 在将 nvarchar 值 '银卡' 转换成数据类型 int 时失败。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   在 System.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   在 System.Data.SqlClient.SqlDataReader.Read()
+   在 Dapper.SqlMapper.<QueryImpl>d__61`1.MoveNext() 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1606
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType) 位置 D:\Dev\dapper-dot-net\Dapper NET40\SqlMapper.cs:行号 1479
+   在 UnitOfWorkWithDapper.Core.DapperContext.Query[T](String sql, Object param, CommandType commandType) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\UnitOfWorkWithDapper.Core\DapperContext.cs:行号 197
+   在 CS.Img.Deposit.DepositRepository.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Data\DepositRepository.cs:行号 130
+   在 CS.Img.Deposit.DepositService.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Service\DepositService.cs:行号 101
+   在 CS.Img.Deposit.DepositApp.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Domain\DepositApp.cs:行号 107
+   在 CS.Img.Deposit.DepositController.GetDepositContentList(Int32 actID) 位置 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\Controllers\DepositController.cs:行号 102
+   在 lambda_method(Closure , Object , Object[] )
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_2.<GetExecutor>b__2(Object instance, Object[] methodParameters)
+   在 System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Tracing.ITraceWriterExtensions.<TraceBeginEndAsyncCore>d__17`1.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+ClientConnectionId:4b762df8-cb00-4854-9d2e-a73e35e7cc4c
+Error Number:245,State:1,Class:16
+19:47:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[0].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:47:55[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[0].[OK]
+19:48:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[1].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:48:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[1].[OK]
+19:51:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[2].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+19:51:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[2].[OK]
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[3].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[4].[OK]
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[6].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[6].[OK]
+19:51:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[6].[OK]
+19:51:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[7].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:51:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[7].[OK]
+19:51:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[8].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=20
+19:51:23[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[8].[OK]
+19:51:26[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[9].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=19
+19:51:26[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[9].[OK]
+19:51:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[10].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=18
+19:51:28[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[10].[OK]
+19:51:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[11].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+19:51:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[11].[OK]
+19:51:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[12].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+19:51:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[12].[OK]
+19:51:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[13].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=6
+19:51:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[13].[OK]
+19:51:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[14].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+19:51:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[14].[OK]
+19:53:47[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[15].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+19:53:48[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[15].[OK]
+19:55:01[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[16].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=20
+19:55:01[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[16].[OK]
+19:55:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[17].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=19
+19:55:03[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[17].[OK]
+19:55:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[18].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=18
+19:55:07[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[18].[OK]
+19:55:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[19].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:55:09[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[19].[OK]
+19:55:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[20].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=6
+19:55:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[20].[OK]
+19:56:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[21].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=10
+19:56:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[21].[OK]
+19:56:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[22].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+19:56:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[22].[OK]
+19:56:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[23].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+19:56:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[23].[OK]
+20:22:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:22:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+20:22:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[1].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+20:22:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+20:22:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+20:22:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[4].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+20:22:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:22:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:22:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:22:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:23:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[5].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+20:23:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[5].[OK]
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[6].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[6].[OK]
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[7].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[7].[OK]
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[8].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[9].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[9].[OK]
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+20:24:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+20:24:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[11].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+20:24:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[11].[OK]
+20:24:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[12].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+20:24:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[12].[OK]
+20:24:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[13].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+20:24:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[13].[OK]
+20:26:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:26:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[1].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[4].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:26:20[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[4].[OK]
+20:26:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[5].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=14
+20:26:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[5].[OK]
+20:26:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[6].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=11
+20:26:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[6].[OK]
+20:26:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[7].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+20:26:56[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[7].[OK]
+20:51:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+20:51:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+20:51:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[1].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+20:51:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[2].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+20:51:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+20:51:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+20:51:29[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+20:51:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+20:51:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+20:51:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+20:51:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+20:51:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+20:51:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[6].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+20:51:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[6].[OK]
+21:00:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[7].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:00:11[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[7].[OK]
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[8].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[9].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[11].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[12].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[12].[OK]
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[12].[OK]
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[12].[OK]
+21:00:12[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[12].[OK]
+21:00:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[13].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:00:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[13].[OK]
+21:02:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[14].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:02:38[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[14].[OK]
+21:02:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[15].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:02:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[15].[OK]
+21:02:41[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[16].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[16].[OK]
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[17].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[18].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[19].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[20].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[20].[OK]
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[20].[OK]
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[20].[OK]
+21:02:42[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[20].[OK]
+21:03:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[21].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:03:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[21].[OK]
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[22].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[22].[OK]
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[23].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[24].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[25].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[25].[OK]
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[26].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[27].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[27].[OK]
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[27].[OK]
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[27].[OK]
+21:07:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[27].[OK]
+21:07:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[28].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:07:27[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[28].[OK]
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[29].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[29].[OK]
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[30].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[30].[OK]
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[31].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[32].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[33].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[34].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[34].[OK]
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[34].[OK]
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[34].[OK]
+21:14:02[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[34].[OK]
+21:14:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[35].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:14:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[35].[OK]
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[36].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[36].[OK]
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[37].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[38].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[39].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[40].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[41].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[41].[OK]
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[41].[OK]
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[41].[OK]
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[41].[OK]
+21:15:25[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[41].[OK]
+21:18:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:18:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[1].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[2].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[3].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[4].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[5].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+21:18:40[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[5].[OK]
+21:18:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[6].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:18:43[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[6].[OK]
+21:22:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[7].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:22:35[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[7].[OK]
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[8].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[9].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[11].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[11].[OK]
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[12].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[12].[OK]
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[12].[OK]
+21:22:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[12].[OK]
+21:22:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[13].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:22:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[13].[OK]
+21:27:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[14].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:27:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[14].[OK]
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[15].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[15].[OK]
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[16].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[17].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[18].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[18].[OK]
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[19].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[19].[OK]
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[19].[OK]
+21:27:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[19].[OK]
+21:27:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[20].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:27:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[20].[OK]
+21:31:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[21].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:31:21[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[21].[OK]
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[22].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[22].[OK]
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[23].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[24].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[25].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[26].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[26].[OK]
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[26].[OK]
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[26].[OK]
+21:31:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[26].[OK]
+21:31:24[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[27].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:31:24[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[27].[OK]
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[28].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[28].[OK]
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[29].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[29].[OK]
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[30].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[31].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[32].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[33].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[33].[OK]
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[33].[OK]
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[33].[OK]
+21:35:16[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[33].[OK]
+21:35:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[34].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=20
+21:35:19[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[34].[OK]
+21:35:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[35].[POST]=>http://127.0.0.1:8888/api/deposit/depositContentUpdate
+21:35:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[35].[OK]
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[36].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[36].[OK]
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[37].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[38].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[39].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[40].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[41].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[41].[OK]
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[41].[OK]
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[41].[OK]
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[41].[OK]
+21:35:58[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[41].[OK]
+21:36:00[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[42].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=20
+21:36:00[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[42].[OK]
+21:38:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[43].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+21:38:30[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[43].[OK]
+21:38:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[44].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=19
+21:38:37[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[44].[OK]
+21:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[45].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=14
+21:38:39[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[45].[OK]
+22:03:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[0].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+22:03:49[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[0].[OK]
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[1].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[2].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[3].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[4].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[5].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+22:03:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[5].[OK]
+22:03:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[6].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+22:03:53[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[6].[OK]
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[7].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[7].[OK]
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[8].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[9].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[10].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[10].[OK]
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[11].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[12].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[12].[OK]
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[12].[OK]
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[12].[OK]
+22:09:10[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[12].[OK]
+22:09:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[13].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+22:09:13[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[13].[OK]
+22:11:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[14].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=20
+22:11:04[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[14].[OK]
+22:13:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[15].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+22:13:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[15].[OK]
+22:13:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[16].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+22:13:31[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[16].[OK]
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[17].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[18].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[18].[OK]
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[19].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[19].[OK]
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[20].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[20].[OK]
+22:13:32[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[card].[20].[OK]
+22:13:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[21].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=21
+22:13:34[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[21].[OK]
+22:13:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[22].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=20
+22:13:57[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[22].[OK]
+22:16:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[user].[23].[GET]=>http://127.0.0.1:8888/api/user/info?token=admin-token
+22:16:50[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[user].[23].[OK]
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[24].[GET]=>http://127.0.0.1:8888/api/deposit/depositActDetailListQuery?beginTime=&endTime=&actName=
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[25].[GET]=>http://127.0.0.1:8888/api/base/retailTypeListQuery?beginTime=&endTime=&actName=
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[26].[GET]=>http://127.0.0.1:8888/api/base/oilCodeListQuery?beginTime=&endTime=&actName=
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[26].[OK]
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[card].[27].[GET]=>http://127.0.0.1:8888/api/card/custInfoQuery?beginTime=&endTime=&actName=
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[base].[28].[GET]=>http://127.0.0.1:8888/api/base/stationList?beginTime=&endTime=&actName=
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[28].[OK]
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[28].[OK]
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[28].[OK]
+22:16:51[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[base].[28].[OK]
+22:16:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[deposit].[29].[GET]=>http://127.0.0.1:8888/api/deposit/depositContentDetailListQuery?actID=20
+22:16:54[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[deposit].[29].[OK]

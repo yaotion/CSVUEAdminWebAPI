@@ -1,0 +1,9 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.OptInfo.dll.config
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.OptInfo.xml
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.OptInfo.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.OptInfo.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.OptInfo\obj\Debug\CS.Img.OptInfo.csprojAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.OptInfo\obj\Debug\CS.Img.OptInfo.csproj.CoreCompileInputs.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.OptInfo\obj\Debug\CS.Img.OptInfo.csproj.CopyComplete
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.OptInfo\obj\Debug\CS.Img.OptInfo.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.OptInfo\obj\Debug\CS.Img.OptInfo.pdb

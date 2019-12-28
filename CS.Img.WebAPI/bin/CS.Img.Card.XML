@@ -9,222 +9,6 @@
             卡操作应用层
             </summary>
         </member>
-        <member name="T:CS.Img.Card.ICardApp">
-            <summary>
-            卡操作应用层接口
-            </summary>
-        </member>
-        <member name="T:CS.Img.Card.ICardRepository">
-            <summary>
-            用户卡仓储操作接口
-            </summary>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetUserSaleTrade(System.String,System.String,System.String)">
-            <summary>
-            获取用户卡售卡记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetUserRecardRecord(System.String,System.String,System.String)">
-            <summary>
-            获取用户卡补卡记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetUserLossCardRecord(System.String,System.String,System.String)">
-            <summary>
-            获取用户卡挂失记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetUserUnLossCardRecord(System.String,System.String,System.String)">
-            <summary>
-            获取用户解挂记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetUserUnGreyCardRecord(System.String,System.String,System.String)">
-            <summary>
-            获取解灰记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetUserDepositRecord(System.String,System.String,System.String)">
-            <summary>
-            获取散户卡储值记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCustPayMoneyRecord(System.String,System.String,System.String)">
-            <summary>
-            获取单位客户存钱记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCustChangeMoneyRecord(System.String,System.String,System.String)">
-            <summary>
-            获取单位客户划账记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCustDepositRecord(System.String,System.String,System.String)">
-             <summary>
-            客户卡储值交易
-             </summary>
-             <param name="stationNo"></param>
-             <param name="beginTime"></param>
-             <param name="endTime"></param>
-             <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCustUnDepositRecord(System.String,System.String,System.String)">
-             <summary>
-            客户卡扣款交易
-             </summary>
-             <param name="stationNo"></param>
-             <param name="beginTime"></param>
-             <param name="endTime"></param>
-             <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetUserUnDepositRecord(System.String,System.String,System.String)">
-             <summary>
-            散户卡扣款交易
-             </summary>
-             <param name="stationNo"></param>
-             <param name="beginTime"></param>
-             <param name="endTime"></param>
-             <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCustCreateRecord(System.String,System.String,System.String)">
-             <summary>
-            单位客户开户记录
-             </summary>
-             <param name="stationNo"></param>
-             <param name="beginTime"></param>
-             <param name="endTime"></param>
-             <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCustDestroyRecord(System.String,System.String,System.String)">
-             <summary>
-            单位客户销户记录
-             </summary>
-             <param name="stationNo"></param>
-             <param name="beginTime"></param>
-             <param name="endTime"></param>
-             <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetChangePinRecord(System.String,System.String,System.String)">
-             <summary>
-            卡密码修改纪录
-             </summary>
-             <param name="stationNo"></param>
-             <param name="beginTime"></param>
-             <param name="endTime"></param>
-             <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetReloadPinRecord(System.String,System.String,System.String)">
-            <summary>
-            重装卡密码修改记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCardUpdateRecord(System.String,System.String,System.String)">
-            <summary>
-            卡信息修改记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCardReturnRecord(System.String,System.String,System.String)">
-            <summary>
-            退卡记录查询
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCardLossRecord(System.String,System.String,System.String,System.Int32)">
-            <summary>
-            挂失记录
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.QueryUserCardInfo(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
-            <summary>
-            查询用户卡信息
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.FindUserCardInfo(System.String,CS.Img.Card.UserCardInfoDetail@)">
-            <summary>
-            获取用户卡详细信息
-            </summary>
-            <param name="CardNo"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.QueryCustomerInfo(System.String,System.String,System.String,System.Int32)">
-            <summary>
-            查询单位账户信息
-            </summary>
-            <param name="AccNo">账户编号</param>
-            <param name="HelpSign">助记符</param>
-            <param name="AccName">单位名称</param>
-            <param name="AccType">账号类型</param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.QueryCustCardInfo(System.String)">
-            <summary>
-            查询单位用户卡信息
-            </summary>
-            <param name="stationNo"></param>
-            <param name="beginTime"></param>
-            <param name="endTime"></param>
-            <returns></returns>
-        </member>
-        <member name="M:CS.Img.Card.ICardRepository.GetCardBillRecord(System.String,System.String,System.String)">
-            <summary>
-            获取指定卡号在指定时段的对账单
-            </summary>
-            <param name="CardNo">卡号</param>
-            <param name="beginTime">开始时间</param>
-            <param name="endTime">结束时间</param>
-            <returns></returns>
-        </member>
         <member name="M:CS.Img.Card.CardApp.#ctor(CS.Img.Card.ICardService,CS.Img.Utils.CSUoWFactory)">
             <summary>
             构造函数
@@ -433,6 +217,377 @@
             <param name="endTime">结束时间</param>
             <returns></returns>
         </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustBillRecord(System.String,System.String,System.String)">
+            <summary>
+            获取指定单位账户在指定时段的对账单
+            </summary>
+            <param name="AccNo">卡号</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCardTradeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡消费纪录
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCardScoreRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡积分账单
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCardScorePayRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            用户卡积分消费记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetSaleCardCount(System.String,System.String,System.String)">
+            <summary>
+            售卡数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetLossCardCount(System.String,System.String,System.String)">
+            <summary>
+            挂失数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:CS.Img.Card.CardApp.GetNewCustomerCount(System.String,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:CS.Img.Card.CardApp.GetDestroyCustomerCount(System.String,System.String,System.String)">
+            <summary>
+            销户数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustReChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            反转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetUserDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            储值金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetUserReDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            圈提金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustomerSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            存钱金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustomerReSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            冲正金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetUserReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            散户退款金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustBackAccMoneySum(System.String,System.String,System.String)">
+            <summary>
+            退至单位账户的余额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustSaveGroupMoneySum(System.String,System.String,System.String)">
+            <summary>
+            获取客户存钱按账户类型分类统计
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            单位账户销户金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetOptGroupSum(System.String,System.String,System.String)">
+            <summary>
+            获取操作日志的分组统计信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustChangeLimitRecord(System.String,System.String,System.String)">
+            <summary>
+            获取限制账户划账记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetMakeCardRecordList(System.String,System.String)">
+            <summary>
+            查询制卡记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetWhiteCardList(System.String,System.String,System.String)">
+            <summary>
+            获取白名单卡列表
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetPSAMCardList(System.String,System.String)">
+            <summary>
+            PSAM卡信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetOilEmpCardSum(System.String,System.String,System.String)">
+            <summary>
+            获取油站清存汇总信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="shiftNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCardPreRecord(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询优惠记录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="preState"></param>
+            <param name="preId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.CardSearch(System.String)">
+            <summary>
+            检索卡号
+            </summary>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetMZMKRecord(System.String,System.String,System.String)">
+            <summary>
+            获取明折明扣纪录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetStationChangePriceRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油站调价记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetStationInfos(CS.Img.Card.StationType)">
+            <summary>
+            获取油站最后传输时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetStationLastTransRecord">
+            <summary>
+            获取油站最后传输时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetBlackList(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取黑名单列表
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="BlackListTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetBlackListCheckList">
+            <summary>
+            获取最新黑名单校验结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetBlackListVersion">
+            <summary>
+            获取当前黑名单版本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustMoneySum(System.String,System.String)">
+            <summary>
+            获取单位的金额统计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCustScoreSum(System.String,System.String)">
+            <summary>
+            获取单位积分统计信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetCardInoutRecord(System.String,System.String,System.String)">
+             <summary>
+             获取卡片出入库记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetChequeReceiveRecord(System.String,System.String,System.String)">
+             <summary>
+             获取支票接收记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetAllSettle(System.String,System.String)">
+            <summary>
+            获取日结信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetAllSettleSum(System.String,System.String)">
+            <summary>
+            获取日结信息合计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetDeductUpdateLog(System.String,System.String)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetUserCardBalance(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="cardNo"></param>
+            <param name="onlyUnBalance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetTradeSumGroupByPrice(System.String,System.String,System.String)">
+            <summary>
+            按单价合计交易累计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardApp.GetInvoiceTrade(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            获取开票纪录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="invoiceType"></param>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Card.ICardApp">
+            <summary>
+            卡操作应用层接口
+            </summary>
+        </member>
         <member name="T:CS.Img.Card.CardController">
             <summary>
             用户卡控制类
@@ -588,17 +743,259 @@
             </summary>
             <returns></returns>
         </member>
+        <member name="M:CS.Img.Card.CardController.GetCustBillRecord(System.String,System.String,System.String)">
+            <summary>
+            获取单位账户对账单
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCardTradeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡消费纪录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCardScoreRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡消费纪录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCardScorePayRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            用户卡积分消费记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Card.CardController.TypeSum">
+            <summary>
+            类型、值合计
+            </summary>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetFunctionCount(System.Collections.Generic.IList{CS.Img.Card.FunctionSum},System.String)">
+            <summary>
+            获取指定函数的数量
+            </summary>
+            <param name="FunList"></param>
+            <param name="FunctionName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetSaleStationSum(System.String,System.String,System.String)">
+            <summary>
+            用户卡积分消费记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCustChangeLimitRecord(System.String,System.String,System.String)">
+            <summary>
+            用户卡积分消费记录
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetMarkCardList(System.String,System.String)">
+            <summary>
+            制卡纪录查询
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetWhiteCardList(System.String,System.String,System.String)">
+            <summary>
+            白名单卡查询
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetPSAMCardList(System.String,System.String)">
+            <summary>
+            获取PSAM卡信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetOilEmpCardSum(System.String,System.String,System.String)">
+            <summary>
+            油站清算汇总表
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCardPreRecord(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            获取油站清存汇总信息
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="preState"></param>
+            <param name="preId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.CardSearch(System.String)">
+            <summary>
+            检索卡号
+            </summary>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetMZMKRecord(System.String,System.String,System.String)">
+            <summary>
+            查询明折明扣纪录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetStationChangePriceRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油站调价记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCardStationRecTime">
+            <summary>
+            获取油站交易传输情况
+            </summary>   
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetBlackList(System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            获取黑名单列表
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="BlackListTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetBlackListCheckList">
+            <summary>
+            获取最新黑名单校验结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCustMoneySum(System.String,System.String)">
+            <summary>
+            获取单位的金额统计
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCustScoreSum(System.String,System.String)">
+            <summary>
+            获取单位积分统计信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetCardInoutRecord(System.String,System.String,System.String)">
+             <summary>
+             获取卡片出入库记录
+             </summary>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+            <param name="StationNo"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetChequeReceiveRecord(System.String,System.String,System.String)">
+             <summary>
+             获取支票接收记录
+             </summary>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+            <param name="StationNo"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetAllSettle(System.String,System.String)">
+            <summary>
+            获取日结信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetAllSettleSum(System.String,System.String)">
+            <summary>
+            获取日结合计信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetDeductUpdateLog(System.String,System.String)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetUserCardBalance(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="cardNo"></param>
+            <param name="onlyUnBalance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetTradeSumGroupByPrice(System.String,System.String,System.String)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardController.GetInvoiceTrade(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            获取开票纪录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="invoiceType"></param>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Card.StationType">
+            <summary>
+            油站类型
+            </summary>
+        </member>
+        <member name="F:CS.Img.Card.StationType.stStation">
+            <summary>
+            油站
+            </summary>
+        </member>
+        <member name="F:CS.Img.Card.StationType.stSale">
+            <summary>
+            发卡点
+            </summary>
+        </member>
         <member name="T:CS.Img.Card.UserLossCardRecord">
             <summary>
             用户卡挂失记录
             </summary>
         </member>
-        <member name="P:CS.Img.Card.UserLossCardRecord.index">
+        <member name="P:CS.Img.Card.UserLossCardRecord.Index">
             <summary>
             序号
             </summary>
         </member>
-        <member name="P:CS.Img.Card.UserLossCardRecord.stationno">
+        <member name="P:CS.Img.Card.UserLossCardRecord.StationNo">
             <summary>
             油站编号
             </summary>
@@ -1988,6 +2385,11 @@
             油品名称
             </summary>
         </member>
+        <member name="T:CS.Img.Card.CardBillSum">
+            <summary>
+            用户卡对账单统计信息
+            </summary>
+        </member>
         <member name="P:CS.Img.Card.CardBillSum.TradeQtys">
             <summary>
             加油升数
@@ -2016,6 +2418,1484 @@
         <member name="P:CS.Img.Card.CardBillSum.UnOilMoneys">
             <summary>
             非油品金额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CustBill">
+            <summary>
+            单位客户账单
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.TypeId1">
+            <summary>
+            业务编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.TypeName">
+            <summary>
+            业务名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.StationName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.PayAMN">
+            <summary>
+            储值存钱金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.PayType">
+            <summary>
+            存钱类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.AccBalance">
+            <summary>
+            账户余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.OptTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.CardAccNo">
+            <summary>
+            卡账号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.CardStateName">
+            <summary>
+            卡状态名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.ChangeAMN">
+            <summary>
+            划账金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.ChangeType">
+            <summary>
+            划账类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.CardAccBalance">
+            <summary>
+            卡账余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.HolderName">
+            <summary>
+            持卡人
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.DepositAMN">
+            <summary>
+            储值金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.DepositType">
+            <summary>
+            储值类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.ConsumeAMN">
+            <summary>
+            消费金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBill.CardBalance">
+            <summary>
+            卡余额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CustBillSum">
+            <summary>
+            单位客户账单统计信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.SaveMoneys">
+            <summary>
+            存钱金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.PreMoneys">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.CorrectMoneys">
+            <summary>
+            冲正金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.VirementMoneys">
+            <summary>
+            客户转帐金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.UnVirementMoneys">
+            <summary>
+            UnVirement金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.DepositMoneys">
+            <summary>
+            客户储值金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.ReturnMoneys">
+            <summary>
+            客户退卡金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.TradeQtys">
+            <summary>
+            加油升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.TradeMoneys">
+            <summary>
+            加油金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustBillSum.UndepositMoneys">
+            <summary>
+            反储值金额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CardTradeRecord">
+            <summary>
+            用户卡消费纪录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.Qty">
+            <summary>
+            升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.AMN">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.BAL">
+            <summary>
+            余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.OptTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.OilName">
+            <summary>
+            油品
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.StationName">
+            <summary>
+            油站名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardTradeRecord.OptNo">
+            <summary>
+            操作员工号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CardConst">
+            <summary>
+            字典定义
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CardScoreRecord">
+            <summary>
+            积分卡账单
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScoreRecord.OptTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScoreRecord.OptType">
+            <summary>
+            操作类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScoreRecord.GoodsCent">
+            <summary>
+            本次积分
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScoreRecord.CurCent">
+            <summary>
+            剩余积分
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScoreRecord.GoodsName">
+            <summary>
+            兑换物品
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CardScorePayRecord">
+            <summary>
+            积分卡兑奖明细
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScorePayRecord.GoodsName">
+            <summary>
+            物品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScorePayRecord.OptTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScorePayRecord.GoodsNum">
+            <summary>
+            物品数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScorePayRecord.CardNO">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScorePayRecord.GoodsCent">
+            <summary>
+            消耗积分
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScorePayRecord.CurCent">
+            <summary>
+            积分余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardScorePayRecord.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.FunctionSum">
+            <summary>
+            功能数量分类统计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.FunctionSum.FunctionNo">
+            <summary>
+            功能名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.FunctionSum.FunctionCount">
+            <summary>
+            使用数量
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.MoneyGroupSum">
+            <summary>
+            金额分组统计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MoneyGroupSum.GroupName">
+            <summary>
+            分组名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MoneyGroupSum.SumMoney">
+            <summary>
+            统计金额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CustChangeLimitRecord">
+            <summary>
+            限制账户划账记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.OptTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.StationName">
+            <summary>
+            油站名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.AccName">
+            <summary>
+            所属账户
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.flag">
+            <summary>
+            操作标志
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.OptName">
+            <summary>
+            操作人
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.OptNo">
+            <summary>
+            操作人编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.Reason">
+            <summary>
+            原因
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.MasterName">
+            <summary>
+            负责人
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustChangeLimitRecord.HelpSign">
+            <summary>
+            单位助记符
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.MakeCardRecord">
+            <summary>
+            制卡记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MakeCardRecord.OptTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MakeCardRecord.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MakeCardRecord.CardTypeName">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MakeCardRecord.OptName">
+            <summary>
+            操作员
+            </summary>
+            <param name=""></param>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Card.WhiteCard">
+            <summary>
+            白名单卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.WhiteCard.OptTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.WhiteCard.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.WhiteCard.StationNo">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.WhiteCard.StationName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.WhiteCard.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.WhiteCard.OptName">
+            <summary>
+            操作员名称
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.PSAMCard">
+            <summary>
+            PSAM卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.OptTime">
+            <summary>
+            时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.OptName">
+            <summary>
+            操作员名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.BeginDate">
+            <summary>
+            有效开始时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.EndDate">
+            <summary>
+            有效结束时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.TermNo">
+            <summary>
+            终端机编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.PSAMCard.RemakeNum">
+            <summary>
+            重置次数
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.OilEmpCardSum">
+            <summary>
+            油站清算汇总
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.OilEmpCardSum.CardTypeName">
+            <summary>
+            卡类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.OilEmpCardSum.CountSum">
+            <summary>
+            交易数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.OilEmpCardSum.QtySum">
+            <summary>
+            总升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.OilEmpCardSum.MoneySum">
+            <summary>
+            总金额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CardPreRecord">
+            <summary>
+            卡优惠记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.CardNo">
+            卡号
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.Qty">
+            <summary>
+            升
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.Money">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.PreMoney">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.PreTime">
+            <summary>
+            优惠时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.State">
+            <summary>
+            返还状态
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.PreId">
+            <summary>
+            优惠类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.AccName">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardPreRecord.AccNo">
+            <summary>
+            账户
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CardSearch">
+            <summary>
+            检索卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardSearch.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.MZMKRecord">
+            <summary>
+            明折明扣纪录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.HolderName">
+            <summary>
+            持卡人
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.Qty">
+            <summary>
+            升数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.Money_Sale">
+            <summary>
+            金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.Money_Pre">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.Flag_Sign">
+            <summary>
+            返还标志
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.Mach_Time">
+            <summary>
+            加油时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.MZMKRecord.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.StationChangePrice">
+            <summary>
+            油站变价记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.StationNo">
+            <summary>
+            油站
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.Terminal">
+            <summary>
+            油枪
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.oil_code">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.oil_name">
+            <summary>
+            油品价格
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.flow_no">
+            <summary>
+            流水号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.oldFlowNo">
+            <summary>
+            调价之前的交易流水号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.newFlowNo">
+            <summary>
+            调价之后的交易流水号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.OldPrice">
+            <summary>
+            调价之前的单价
+            </summary>        
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.NewPrice">
+            <summary>
+            调价之后的 单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationChangePrice.Mach_Time">
+            <summary>
+            加油时间
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.StationInfo">
+            <summary>
+            油站最后传输时间信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationInfo.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationInfo.StationName">
+            <summary>
+            油站名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationInfo.LastTransTime">
+            <summary>
+            最后传输时间
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.StationTransResp">
+            <summary>
+            油站最后传输信息返回结构
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationTransResp.StationNameList">
+            <summary>
+            油站名称列表
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationTransResp.StationTimeList">
+            <summary>
+            油站传输时间列表
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.StationTransResp.StandardTimeList">
+            <summary>
+            时间刻度列表
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.BlackCard">
+            <summary>
+            黑明单卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackCard.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackCard.HolderName">
+            <summary>
+            持卡人姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackCard.OptTime">
+            <summary>
+            挂失时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackCard.BlackListType">
+            <summary>
+            黑名单类型，0基础黑名单，1新增黑名单，2新删黑名单
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.BlackListCheck">
+            <summary>
+            黑名单校验记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.BlackListType">
+            <summary>
+            黑名单类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.BlackListTypeName">
+            <summary>
+            黑名单类型名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.BlackListVersion">
+            <summary>
+            油站黑名单版本号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.StationUpdateTime">
+            <summary>
+            油站最后更新时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.PostUpdateTime">
+            <summary>
+            油站最后连接时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.TimeSpan">
+            <summary>
+            同步时差(分钟)
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.IsTimeout">
+            <summary>
+            是否超时
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListCheck.IsEqual">
+            <summary>
+            版本是否相等
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.BlackListVersion">
+            <summary>
+            黑名单版本
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListVersion.BlackVer">
+            <summary>
+            基础黑名单版本
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListVersion.AddBlackVer">
+            <summary>
+            新增黑名单版本
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.BlackListVersion.DelBlackVer">
+            <summary>
+            新删黑名单版本
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CustMoneySum">
+            <summary>
+            单位金额统计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.AccNo">
+            <summary>
+            单位账号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.AccName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.SaveMoney">
+            <summary>
+            存钱金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.PreMoney">
+            <summary>
+            优惠金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.AccBalance">
+            <summary>
+            账户余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.CardAccBalance">
+            <summary>
+            卡账余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.CardBalance">
+            <summary>
+            卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.AccConsume">
+            <summary>
+            消费
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustMoneySum.AccCorrect">
+            <summary>
+            冲正
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CustScoreSum">
+            <summary>
+            单位积分统计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustScoreSum.AccNo">
+            <summary>
+            单位账号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustScoreSum.AccName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustScoreSum.SavePoint">
+            <summary>
+            获得积分
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustScoreSum.UsePoint">
+            <summary>
+            使用积分
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CustScoreSum.Bal">
+            <summary>
+            剩余积分
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.CardInout">
+            <summary>
+            卡出入库记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardInout.StationNo">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardInout.StationName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardInout.OptNo">
+            <summary>
+            操作员
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardInout.OptTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardInout.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardInout.Kind">
+            <summary>
+            种类
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.CardInout.Number">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.ChequeReceive">
+            <summary>
+            支票接收记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.AccNo">
+            <summary>
+            单位账号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.AccName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.ChequeNo">
+            <summary>
+            支票编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.ChequeMoney">
+            <summary>
+            支票金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.ReceiveDate">
+            <summary>
+            接收日期
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.IsEffctiveName">
+            <summary>
+            是否生效
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.IsReturnName">
+            <summary>
+            是否退票
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.StationNo">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.OptName">
+            <summary>
+            操作员
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeReceive.OptNo">
+            <summary>
+            操作员
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.ChequeSum">
+            <summary>
+            支票统计信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeSum.AllCount">
+            <summary>
+            全部数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeSum.EffectiveCount">
+            <summary>
+            生效数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeSum.InEffectiveCount">
+            <summary>
+            未生效数量
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.ChequeSum.ReturnCount">
+            <summary>
+            退票数量
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.SettleInfo">
+            <summary>
+            日结信息
+            P1=客户存钱  + 散户优惠  + 散户储值 + 客户优惠 - 冲正 - 客户消费 - 散户消费 -  客户销户 - 散户退卡 - 散户圈提
+            C1=期初账户余额+期初卡账余额+期初单位客户卡月+期初散户卡余额
+            C2=期末账户余额+期末卡账余额+期末单位客户卡月+期末散户卡余额+用户卡账余额(备付金)
+            SET @C1 = @ALL_SUM_OLDACCBALANCE + @ALL_SUM_OLDCARDACCBALANCE + @ALL_SUM_OLDCARDBALANCE +@ALL_SUM_OLD_USER_CARD_BALANCE
+             SET @C2 = @ALL_SUM_ACCBALANCE + @ALL_SUM_CARDACCBALANCE + @ALL_SUM_CARDBALANCE + @ALL_SUM_USERCARDBALANCE + @ALL_SUM_@USER_CARD_ACC
+             SET @P1 = @ALL_SUM_SAVEMONEY +@ALL_SUM_USERPRE+ @ALL_SUM_USERDEPOSIT +@ALL_SUM_PREMONEY - @ALL_SUM_ACCCORRECT - @ALL_SUM_ACCCONSUME - @ALL_SUM_USERCONSUME -  @ALL_SUM_ACCDELETE - @ALL_SUM_USERRETURNCARD - @ALL_SUM_USERUNDEPOSIT
+             C1 + P1 等于 C2 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccNo">
+            <summary>
+            单位账号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.SaveMoney">
+            <summary>
+            存钱金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.PreMoney">
+            <summary>
+            优惠返还
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.OldAccBalance">
+            <summary>
+            期初单位账户余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccBalance">
+            <summary>
+            期末单位账户余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.OldCardAccBalance">
+            <summary>
+            期初卡账余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.CardAccBalance">
+            <summary>
+            期末卡账余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.OldCardBalance">
+            <summary>
+            期初单位卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.CardBalance">
+            <summary>
+            期末单位卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccCorrect">
+            <summary>
+            冲正金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccViment">
+            <summary>
+            划账金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccUnViment">
+            <summary>
+            反划账金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccDeposit">
+            <summary>
+            圈存
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccUnDeposit">
+            <summary>
+            扣款
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccUnGrey">
+            <summary>
+            解灰
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccConsume">
+            <summary>
+            消费
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.AccDelete">
+            <summary>
+            销户
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.UserDeposit">
+            <summary>
+            储值
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.UserUnDeposit">
+            <summary>
+            扣款
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.UserUngrey">
+            <summary>
+            解灰
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.UserConsume">
+            <summary>
+            消费
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.UserPre">
+            <summary>
+            用户卡优惠返还
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.UserReturnCard">
+            <summary>
+            退卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.OldUserCardBalance">
+            <summary>
+            期初用户卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.UserCardBalance">
+            <summary>
+            期末用户卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.PreRefund">
+            <summary>
+            备付金
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleInfo.IsBalance">
+            <summary>
+            是否平衡
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.SettleSum">
+            <summary>
+            日结合计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.SaveMoney">
+            <summary>
+            存钱金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.PreMoney">
+            <summary>
+            优惠返还
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.OldAccBalance">
+            <summary>
+            期初单位账户余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccBalance">
+            <summary>
+            期末单位账户余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.OldCardAccBalance">
+            <summary>
+            期初卡账余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.CardAccBalance">
+            <summary>
+            期末卡账余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.OldCardBalance">
+            <summary>
+            期初单位卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.CardBalance">
+            <summary>
+            期末单位卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccCorrect">
+            <summary>
+            冲正金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccViment">
+            <summary>
+            划账金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccUnViment">
+            <summary>
+            反划账金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccDeposit">
+            <summary>
+            圈存
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccUnDeposit">
+            <summary>
+            扣款
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccUnGrey">
+            <summary>
+            解灰
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccConsume">
+            <summary>
+            消费
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.AccDelete">
+            <summary>
+            销户
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.UserDeposit">
+            <summary>
+            储值
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.UserUnDeposit">
+            <summary>
+            扣款
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.UserUngrey">
+            <summary>
+            解灰
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.UserConsume">
+            <summary>
+            消费
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.UserPre">
+            <summary>
+            用户卡优惠返还
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.UserReturnCard">
+            <summary>
+            退卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.OldUserCardBalance">
+            <summary>
+            期初用户卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.UserCardBalance">
+            <summary>
+            期末用户卡余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.PreRefund">
+            <summary>
+            备付金
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.IsBalance">
+            <summary>
+            是否平衡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.SettleSum.nowDate">
+            <summary>
+            查询日期
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.DeductUpdateLog">
+            <summary>
+            扣款额度修改记录
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.DeductUpdateLog.AccNo">
+            <summary>
+            单位账号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.DeductUpdateLog.AccName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.DeductUpdateLog.OptTime">
+            <summary>
+            操作时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.DeductUpdateLog.OptNo">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.DeductUpdateLog.OldAmt">
+            <summary>
+            原额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.DeductUpdateLog.NewAmt">
+            <summary>
+            新额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.UserCardBalance">
+            <summary>
+            用户卡平衡表
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.AccName">
+            <summary>
+            单位名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.CardNo">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.HolderName">
+            <summary>
+            持卡人姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Balance1">
+            <summary>
+            期初余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Deposit">
+            <summary>
+            储值
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Pre">
+            <summary>
+            优惠返还
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Consume">
+            <summary>
+            消费
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Undeposit">
+            <summary>
+            扣款
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Return">
+            <summary>
+            退卡
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Refund">
+            <summary>
+            备付金
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Balance2">
+            <summary>
+            期末余额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.UserCardBalance.Difference">
+            <summary>
+            差额
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.TradeSumGroupByPrice">
+            <summary>
+            按单价合计交易累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.Oil_Code">
+            <summary>
+            油品
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.Price">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.PAY_WAY">
+            <summary>
+            支付方式
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.SumQty">
+            <summary>
+            升累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.SumMoney">
+            <summary>
+            金额累计
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.CardAcc">
+            <summary>
+            卡单位类型(cust=单位,emp=员工,user=散户)
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.TradeSumGroupByPrice.IsJiZhang">
+            <summary>
+            是否为记账(0=否,1=是)
+            </summary>
+        </member>
+        <member name="T:CS.Img.Card.InvoiceTrade">
+            <summary>
+            开票记录查询
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.ASN">
+            <summary>
+            卡号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.HolderName">
+            <summary>
+            持卡人
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.AMN">
+            <summary>
+            加油金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.Mach_Time">
+            <summary>
+            加油时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.Qty">
+            <summary>
+            升
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.StationNo">
+            <summary>
+            油站编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.Invoice_type">
+            <summary>
+            开票类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Card.InvoiceTrade.InvoiceTypeName">
+            <summary>
+            发票类型名称
             </summary>
         </member>
         <member name="T:CS.Img.Card.CardRepository">
@@ -2226,6 +4106,920 @@
             <param name="endTime">结束时间</param>
             <returns></returns>
         </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustBillRecord(System.String,System.String,System.String)">
+            <summary>
+            获取指定单位账户在指定时段的对账单
+            </summary>
+            <param name="AccNo">卡号</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCardTradeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡消费纪录
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCardScoreRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡积分账单
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCardScorePayRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            用户卡积分消费记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetSaleCardCount(System.String,System.String,System.String)">
+            <summary>
+            售卡数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetLossCardCount(System.String,System.String,System.String)">
+            <summary>
+            挂失数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:CS.Img.Card.CardRepository.GetNewCustomerCount(System.String,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:CS.Img.Card.CardRepository.GetDestroyCustomerCount(System.String,System.String,System.String)">
+            <summary>
+            销户数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustReChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            反转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetUserDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            储值金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetUserReDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            圈提金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustomerSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            存钱金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustomerReSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            冲正金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetUserReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            散户退款金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            单位账户销户金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustBackAccMoneySum(System.String,System.String,System.String)">
+            <summary>
+            退至单位账户的余额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustSaveGroupMoneySum(System.String,System.String,System.String)">
+            <summary>
+            获取客户存钱按账户类型分类统计
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetOptGroupSum(System.String,System.String,System.String)">
+            <summary>
+            获取操作日志的分组统计信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustChangeLimitRecord(System.String,System.String,System.String)">
+            <summary>
+            获取限制账户划账记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetMakeCardRecordList(System.String,System.String)">
+            <summary>
+            查询制卡记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetWhiteCardList(System.String,System.String,System.String)">
+            <summary>
+            获取白名单卡列表
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetPSAMCardList(System.String,System.String)">
+            <summary>
+            PSAM卡信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetOilEmpCardSum(System.String,System.String,System.String)">
+            <summary>
+            获取油站清存汇总信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="shiftNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCardPreRecord(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询优惠记录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="preState"></param>
+            <param name="preId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.CardSearch(System.String)">
+            <summary>
+            检索卡号
+            </summary>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetMZMKRecord(System.String,System.String,System.String)">
+            <summary>
+            获取明折明扣纪录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetStationChangePriceRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油站调价记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetStationInfos(CS.Img.Card.StationType)">
+            <summary>
+            获取油站最后传输时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetBlackList(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取黑名单列表
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="BlackListTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetBlackListCheckList">
+            <summary>
+            获取最新黑名单校验结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetBlackListVersion">
+            <summary>
+            获取当前黑名单版本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustMoneySum(System.String,System.String)">
+            <summary>
+            获取单位的金额统计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCustScoreSum(System.String,System.String)">
+            <summary>
+            获取单位积分统计信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetCardInoutRecord(System.String,System.String,System.String)">
+             <summary>
+             获取卡片出入库记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetChequeReceiveRecord(System.String,System.String,System.String)">
+             <summary>
+             获取支票接收记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetAllSettle(System.String,System.String)">
+            <summary>
+            获取日结信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetDeductUpdateLog(System.String,System.String)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetUserCardBalance(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="cardNo"></param>
+            <param name="onlyUnBalance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetTradeSumGroupByPrice(System.String,System.String,System.String)">
+            <summary>
+            按单价合计交易累计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardRepository.GetInvoiceTrade(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            获取开票纪录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="invoiceType"></param>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Card.ICardRepository">
+            <summary>
+            用户卡仓储操作接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserSaleTrade(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡售卡记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserRecardRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡补卡记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserLossCardRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡挂失记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserUnLossCardRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户解挂记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserUnGreyCardRecord(System.String,System.String,System.String)">
+            <summary>
+            获取解灰记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserDepositRecord(System.String,System.String,System.String)">
+            <summary>
+            获取散户卡储值记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustPayMoneyRecord(System.String,System.String,System.String)">
+            <summary>
+            获取单位客户存钱记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustChangeMoneyRecord(System.String,System.String,System.String)">
+            <summary>
+            获取单位客户划账记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustDepositRecord(System.String,System.String,System.String)">
+             <summary>
+            客户卡储值交易
+             </summary>
+             <param name="stationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustUnDepositRecord(System.String,System.String,System.String)">
+             <summary>
+            客户卡扣款交易
+             </summary>
+             <param name="stationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserUnDepositRecord(System.String,System.String,System.String)">
+             <summary>
+            散户卡扣款交易
+             </summary>
+             <param name="stationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustCreateRecord(System.String,System.String,System.String)">
+             <summary>
+            单位客户开户记录
+             </summary>
+             <param name="stationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustDestroyRecord(System.String,System.String,System.String)">
+             <summary>
+            单位客户销户记录
+             </summary>
+             <param name="stationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetChangePinRecord(System.String,System.String,System.String)">
+             <summary>
+            卡密码修改纪录
+             </summary>
+             <param name="stationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetReloadPinRecord(System.String,System.String,System.String)">
+            <summary>
+            重装卡密码修改记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardUpdateRecord(System.String,System.String,System.String)">
+            <summary>
+            卡信息修改记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardReturnRecord(System.String,System.String,System.String)">
+            <summary>
+            退卡记录查询
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardLossRecord(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            挂失记录
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.QueryUserCardInfo(System.String,System.String,System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询用户卡信息
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.FindUserCardInfo(System.String,CS.Img.Card.UserCardInfoDetail@)">
+            <summary>
+            获取用户卡详细信息
+            </summary>
+            <param name="CardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.QueryCustomerInfo(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            查询单位账户信息
+            </summary>
+            <param name="AccNo">账户编号</param>
+            <param name="HelpSign">助记符</param>
+            <param name="AccName">单位名称</param>
+            <param name="AccType">账号类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.QueryCustCardInfo(System.String)">
+            <summary>
+            查询单位用户卡信息
+            </summary>
+            <param name="stationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardBillRecord(System.String,System.String,System.String)">
+            <summary>
+            获取指定卡号在指定时段的对账单
+            </summary>
+            <param name="CardNo">卡号</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustBillRecord(System.String,System.String,System.String)">
+            <summary>
+            获取指定卡号在指定时段的对账单
+            </summary>
+            <param name="AccNo">卡号</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardTradeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡消费纪录
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardScoreRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡积分账单
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardScorePayRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            用户卡积分消费记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetSaleCardCount(System.String,System.String,System.String)">
+            <summary>
+            售卡数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetLossCardCount(System.String,System.String,System.String)">
+            <summary>
+            挂失数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetNewCustomerCount(System.String,System.String,System.String)">
+            <summary>
+            开户数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetDestroyCustomerCount(System.String,System.String,System.String)">
+            <summary>
+            销户数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustReChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            反转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            储值金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserReDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            圈提金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustomerSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            存钱金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustomerReSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            冲正金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            散户退款金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            单位销户金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustBackAccMoneySum(System.String,System.String,System.String)">
+            <summary>
+            退至单位账号的金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustSaveGroupMoneySum(System.String,System.String,System.String)">
+            <summary>
+            获取客户存钱按账户类型分类统计
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetOptGroupSum(System.String,System.String,System.String)">
+            <summary>
+            获取操作日志的分组统计信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustChangeLimitRecord(System.String,System.String,System.String)">
+            <summary>
+            获取限制账户划账记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetMakeCardRecordList(System.String,System.String)">
+            <summary>
+            获取制卡记录列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetWhiteCardList(System.String,System.String,System.String)">
+            <summary>
+            获取白名单卡列表
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetPSAMCardList(System.String,System.String)">
+            <summary>
+            PSAM卡信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetOilEmpCardSum(System.String,System.String,System.String)">
+            <summary>
+            获取油站清存汇总信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardPreRecord(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询优惠记录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="preState"></param>
+            <param name="preId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.CardSearch(System.String)">
+            <summary>
+            检索卡号
+            </summary>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:CS.Img.Card.ICardRepository.GetMZMKRecord(System.String,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:CS.Img.Card.ICardRepository.GetStationChangePriceRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油站调价记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetStationInfos(CS.Img.Card.StationType)">
+            <summary>
+            获取油站最后传输时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetBlackList(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取黑名单列表
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="BlackListTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetBlackListCheckList">
+            <summary>
+            获取最新黑名单校验结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetBlackListVersion">
+            <summary>
+            获取当前黑名单版本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustMoneySum(System.String,System.String)">
+            <summary>
+            获取单位的金额统计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCustScoreSum(System.String,System.String)">
+            <summary>
+            获取单位积分信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetCardInoutRecord(System.String,System.String,System.String)">
+             <summary>
+             获取卡出入库记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetChequeReceiveRecord(System.String,System.String,System.String)">
+             <summary>
+             获取支票 接收记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetAllSettle(System.String,System.String)">
+            <summary>
+            获取日结信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetDeductUpdateLog(System.String,System.String)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetUserCardBalance(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="cardNo"></param>
+            <param name="onlyUnBalance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetTradeSumGroupByPrice(System.String,System.String,System.String)">
+            <summary>
+            按单价合计交易累计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardRepository.GetInvoiceTrade(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            获取开票纪录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="invoiceType"></param>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
         <member name="M:CS.Img.Card.CardService.GetUserRecardRecord(System.String,System.String,System.String)">
             <summary>
             获取用户卡补卡记录
@@ -2418,6 +5212,370 @@
             <param name="CardNo">卡号</param>
             <param name="beginTime">开始时间</param>
             <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustBillRecord(System.String,System.String,System.String)">
+            <summary>
+            获取指定单位账户在指定时段的对账单
+            </summary>
+            <param name="AccNo">卡号</param>
+            <param name="beginTime">开始时间</param>
+            <param name="endTime">结束时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCardTradeRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡消费纪录
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCardScoreRecord(System.String,System.String,System.String)">
+            <summary>
+            获取用户卡积分账单
+            </summary>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCardScorePayRecord(System.String,System.String,System.String,System.String)">
+            <summary>
+            用户卡积分消费记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="CardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetSaleCardCount(System.String,System.String,System.String)">
+            <summary>
+            售卡数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetLossCardCount(System.String,System.String,System.String)">
+            <summary>
+            挂失数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <!-- 对于成员“M:CS.Img.Card.CardService.GetNewCustomerCount(System.String,System.String,System.String)”忽略有格式错误的 XML 注释 -->
+        <member name="M:CS.Img.Card.CardService.GetDestroyCustomerCount(System.String,System.String,System.String)">
+            <summary>
+            销户数量
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustReChangeMoneySum(System.String,System.String,System.String)">
+            <summary>
+            反转账金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetUserDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            储值金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetUserReDepositMoneySum(System.String,System.String,System.String)">
+            <summary>
+            圈提金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustomerSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            存钱金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustomerReSaveMoneySum(System.String,System.String,System.String)">
+            <summary>
+            冲正金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetUserReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            散户退款金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustSaveGroupMoneySum(System.String,System.String,System.String)">
+            <summary>
+            获取客户存钱按账户类型分类统计
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustReturnMoneySum(System.String,System.String,System.String)">
+            <summary>
+            退至单位客户销户金额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustBackAccMoneySum(System.String,System.String,System.String)">
+            <summary>
+            退至单位账户的余额
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetOptGroupSum(System.String,System.String,System.String)">
+            <summary>
+            获取操作日志的分组统计信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustChangeLimitRecord(System.String,System.String,System.String)">
+            <summary>
+            获取限制账户划账记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetMakeCardRecordList(System.String,System.String)">
+            <summary>
+            查询制卡记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetWhiteCardList(System.String,System.String,System.String)">
+            <summary>
+            获取白名单卡列表
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetPSAMCardList(System.String,System.String)">
+            <summary>
+            PSAM卡信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetOilEmpCardSum(System.String,System.String,System.String)">
+            <summary>
+            获取油站清存汇总信息
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="shiftNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCardPreRecord(System.String,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            查询优惠记录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="preState"></param>
+            <param name="preId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.CardSearch(System.String)">
+            <summary>
+            检索卡号
+            </summary>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetMZMKRecord(System.String,System.String,System.String)">
+            <summary>
+            获取明折明扣纪录
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetStationChangePriceRecord(System.String,System.String,System.String)">
+            <summary>
+            获取油站调价记录
+            </summary>
+            <param name="StationNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetStationInfos(CS.Img.Card.StationType)">
+            <summary>
+            获取油站最后传输时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetStationLastTransRecord">
+            <summary>
+            获取油站最后传输时间
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetBlackList(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取黑名单列表
+            </summary>
+            <param name="cardNo"></param>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="BlackListTypeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetBlackListCheckList">
+            <summary>
+            获取最新黑名单校验结果
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetBlackListVersion">
+            <summary>
+            获取当前黑名单版本信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustMoneySum(System.String,System.String)">
+            <summary>
+            获取单位的金额统计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCustScoreSum(System.String,System.String)">
+            <summary>
+            获取单位积分统计信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetCardInoutRecord(System.String,System.String,System.String)">
+             <summary>
+             获取卡片出入库记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetChequeReceiveRecord(System.String,System.String,System.String)">
+             <summary>
+             获取支票接收记录
+             </summary>
+            <param name="StationNo"></param>
+             <param name="beginTime"></param>
+             <param name="endTime"></param>
+             <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetAllSettle(System.String,System.String)">
+            <summary>
+            获取日结信息
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetDeductUpdateLog(System.String,System.String)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetUserCardBalance(System.String,System.String,System.String,System.Int32)">
+            <summary>
+            获取扣款额度修改记录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="cardNo"></param>
+            <param name="onlyUnBalance"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetTradeSumGroupByPrice(System.String,System.String,System.String)">
+            <summary>
+            按单价合计交易累计
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.CardService.GetInvoiceTrade(System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            获取开票纪录
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="stationNo"></param>
+            <param name="invoiceType"></param>
+            <param name="cardNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Card.ICardService.GetStationLastTransRecord">
+            <summary>
+            获取油站最后传输时间
+            </summary>
             <returns></returns>
         </member>
     </members>

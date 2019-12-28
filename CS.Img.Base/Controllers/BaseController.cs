@@ -93,7 +93,7 @@ namespace CS.Img.Base
             return Ok(resp);
         }
         /// <summary>
-        /// 获取油站信息
+        /// 获取散户类型
         /// </summary>
         /// <returns></returns>
         [Route("api/base/retailTypeListQuery")]
@@ -106,6 +106,155 @@ namespace CS.Img.Base
             var app = GetApp();
 
             var listData = app.GetRetailTypeList();
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+        /// <summary>
+        /// 获取优惠方式
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/preIdListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetPreIdList()
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+
+
+            var app = GetApp();
+
+            var listData = app.GetPreIdList();
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+        /// <summary>
+        /// 获取支付方式列表
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/paywayListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetPayWayList()
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+
+
+            var app = GetApp();
+
+            var listData = app.GetPayWayList();
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+        /// <summary>
+        /// 获取班号
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/shiftListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetShiftNoList(string stationNo, string bussDate)
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+
+
+            var app = GetApp();
+
+            var listData = app.GetShiftNoList(stationNo, bussDate);
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+        /// <summary>
+        /// 获取油品
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/oilCodeListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetOilInfoList()
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+
+
+            var app = GetApp();
+
+            var listData = app.GetOilInfoList();
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+        /// <summary>
+        /// 获取油枪号
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/terminalListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetTerminalInfoList(string stationNo)
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+            var app = GetApp();
+            var listData = app.GetTerminalInfoList(stationNo);
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+        /// <summary>
+        /// 获取班号
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/tradeTypeListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetTradeTypeInfoList()
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+            var app = GetApp();
+            var listData = app.GetTradeTypeInfoList();
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+        /// <summary>
+        /// 获取卡类型
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/cardTypeListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetCardTypeInfoList()
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+            var app = GetApp();
+            var listData = app.GetCardTypeInfoList();
+            var respData = new CSWebAPIListResp();
+            respData.items = listData;
+            respData.total = listData.Count;
+            resp.data = respData;
+            return Ok(resp);
+        }
+
+        /// <summary>
+        /// 获取油枪号
+        /// </summary>
+        /// <returns></returns>
+        [Route("api/base/empListQuery")]
+        [HttpGet]
+        public IHttpActionResult GetEmployeeList(string stationNo)
+        {
+            var resp = new CS.Img.Utils.CSHttpWebAPIResp();
+            var app = GetApp();
+            var listData = app.GetEmployeeList(stationNo);
             var respData = new CSWebAPIListResp();
             respData.items = listData;
             respData.total = listData.Count;

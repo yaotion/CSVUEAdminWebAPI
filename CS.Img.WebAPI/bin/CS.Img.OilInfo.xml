@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.OilInfo</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.OilInfo.OilInfoController">
+            <summary>
+            站点信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoController.GetOilInfoList">
+            <summary>
+            获取支付方式信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoController.OilInfoAdd(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            添加常用油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoController.OilInfoUpdate(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            修改常用油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoController.OilInfoDelete(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            删除常用油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.OilInfo.IOilInfoRepository">
+            <summary>
+            站点信息Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.OilInfo.IOilInfoRepository.GetOilInfoList">
+            <summary>
+            获取常用油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OilInfo.IOilInfoRepository.OilInfoAdd(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            添加常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.IOilInfoRepository.OilInfoUpdate(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            修改常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.IOilInfoRepository.OilInfoDelete(System.String)">
+            <summary>
+            删除常用油品
+            </summary>
+            <param name="oilCode"></param>
+        </member>
+        <!-- 对于成员“T:CS.Img.OilInfo.OilInfo”忽略有格式错误的 XML 注释 -->
+        <member name="P:CS.Img.OilInfo.OilInfo.OilCode">
+            <summary>
+            油品编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.OilInfo.OilInfo.OilName">
+            <summary>
+            油品名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.OilInfo.OilInfo.OilEnabled">
+            <summary>
+            是否启用
+            </summary>
+        </member>
+        <member name="P:CS.Img.OilInfo.OilInfo.OilDensity">
+            <summary>
+            密度
+            </summary>
+        </member>
+        <member name="P:CS.Img.OilInfo.OilInfo.OilPrice">
+            <summary>
+            单价
+            </summary>
+        </member>
+        <member name="T:CS.Img.OilInfo.OilInfoRepository">
+            <summary>
+            站点信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoRepository.GetOilInfoList">
+            <summary>
+            获取所有支付方式
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoRepository.OilInfoAdd(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            添加常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoRepository.OilInfoUpdate(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            修改常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoRepository.OilInfoDelete(System.String)">
+            <summary>
+            删除常用油品
+            </summary>
+            <param name="oilCode"></param>
+        </member>
+        <member name="T:CS.Img.OilInfo.IOilInfoApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.OilInfo.OilInfoApp">
+            <summary>
+            站点信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoApp.#ctor(CS.Img.OilInfo.IOilInfoService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoApp.GetOilInfoList">
+            <summary>
+            获取所有油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoApp.OilInfoAdd(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            添加常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoApp.OilInfoUpdate(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            修改常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoApp.OilInfoDelete(System.String)">
+            <summary>
+            删除常用油品
+            </summary>
+            <param name="oilCode"></param>
+        </member>
+        <member name="T:CS.Img.OilInfo.IOilInfoService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+        <member name="T:CS.Img.OilInfo.OilInfoService">
+            <summary>
+            油品信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoService.#ctor(CS.Img.OilInfo.IOilInfoRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoService.GetOilInfoList">
+            <summary>
+            获取所有油品
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoService.OilInfoAdd(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            添加常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoService.OilInfoUpdate(CS.Img.OilInfo.OilInfo)">
+            <summary>
+            修改常用油品
+            </summary>
+            <param name="oilInfo"></param>
+        </member>
+        <member name="M:CS.Img.OilInfo.OilInfoService.OilInfoDelete(System.String)">
+            <summary>
+            删除常用油品
+            </summary>
+            <param name="oilCode"></param>
+        </member>
+    </members>
+</doc>

@@ -17,10 +17,12 @@ E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\bin\Debug\System.IdentityModel.
 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Lib.Output\CS.Img.Utils.XML
 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Lib.Output\CS.Img.Utils.dll
 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Lib.Output\CS.Img.Utils.pdb
-E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.dll
-E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Utils.dll.config
 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Utils.XML
 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Utils.dll
 E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Utils.pdb
-E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Utils.dll.config
-E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.csprojResolveAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.csprojAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.csproj.CoreCompileInputs.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Utils\obj\Debug\CS.Img.Utils.csproj.CopyComplete

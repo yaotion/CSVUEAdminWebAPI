@@ -35,6 +35,70 @@ namespace CS.Img.Base
         {
             return _Repository.GetRetailTypeList();
         }
+        /// <summary>
+        /// 获取优惠类型列表
+        /// </summary>
+        /// <returns></returns>
+        public List<preType> GetPreIdList()
+        {
+            return _Repository.GetPreIdList();
+        }
 
+        /// <summary>
+        /// 获取支付方式列表
+        /// </summary>
+        /// <returns></returns>
+        public List<PayWay> GetPayWayList()
+        {
+            return _Repository.GetPayWayList();
+        }
+        /// <summary>
+        /// 获取班号
+        /// </summary>
+        /// <returns></returns>
+        public List<ShiftNo> GetShiftNoList(string stationNo, string bussDate)
+        {
+            return _Repository.GetShiftNoList(stationNo, bussDate);
+        }
+        /// <summary>
+        /// 获取油品信息
+        /// </summary>
+        /// <returns></returns>
+        public List<OilInfo> GetOilInfoList()
+        {
+            return _Repository.GetOilInfoList();
+        }
+        /// <summary>
+        /// 获取油枪信息
+        /// </summary>
+        /// <returns></returns>
+        public List<TerminalInfo> GetTerminalInfoList(string stationNo)
+        {
+            return _Repository.GetTerminalInfoList(stationNo);
+        }
+        /// <summary>
+        /// 获取交易类型
+        /// </summary>
+        /// <returns></returns>
+        public List<TradeTypeInfo> GetTradeTypeInfoList()
+        {
+            return _Repository.GetTradeTypeInfoList();
+        }
+        /// <summary>
+        /// 获取卡类型
+        /// </summary>
+        /// <returns></returns>
+        public List<CardTypeInfo> GetCardTypeInfoList()
+        {
+            return _Repository.GetCardTypeInfoList();
+        }
+        /// <summary>
+        /// 油站员工信息
+        /// </summary>
+        /// <returns></returns>
+        public List<Employee> GetEmployeeList(string stationNo)
+        {
+            return _Repository.GetEmployeeList(stationNo);
+        }
     }
 }

@@ -1,6 +1,0 @@
-22:20:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[Identity].[0].[POST]=>http://localhost:8888/api/Identity
-22:20:36[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[Identity].[0].[OK]
-22:20:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[Identity].[1].[GET]=>http://localhost:8888/api/Identity?UserID=admin
-22:20:59[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[Identity].[1].[OK]
-22:22:33[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Requestd].[].[Identity].[2].[GET]=>http://localhost:8888/api/Identity?UserID=admin
-22:23:22[INFO ]{CS.Img.WebAPI.Filters.ActionMonitorAttribute}-[Response].[].[Identity].[2].[OK]

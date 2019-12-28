@@ -1,0 +1,9 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.RetailType.dll.config
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.RetailType.xml
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.RetailType.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.RetailType.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.RetailType\obj\Debug\CS.Img.RetailType.csprojAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.RetailType\obj\Debug\CS.Img.RetailType.csproj.CoreCompileInputs.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.RetailType\obj\Debug\CS.Img.RetailType.csproj.CopyComplete
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.RetailType\obj\Debug\CS.Img.RetailType.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.RetailType\obj\Debug\CS.Img.RetailType.pdb

@@ -1,0 +1,9 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Discount\obj\Debug\CS.Img.Discount.csprojAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Discount\obj\Debug\CS.Img.Discount.csproj.CoreCompileInputs.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Discount.dll.config
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Discount.xml
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Discount.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Discount.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Discount\obj\Debug\CS.Img.Discount.csproj.CopyComplete
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Discount\obj\Debug\CS.Img.Discount.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Discount\obj\Debug\CS.Img.Discount.pdb

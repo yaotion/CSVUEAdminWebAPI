@@ -1,0 +1,9 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.PaywayInfo.dll.config
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.PaywayInfo.xml
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.PaywayInfo.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.PaywayInfo.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PaywayInfo\obj\Debug\CS.Img.PaywayInfo.csprojAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PaywayInfo\obj\Debug\CS.Img.PaywayInfo.csproj.CoreCompileInputs.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PaywayInfo\obj\Debug\CS.Img.PaywayInfo.csproj.CopyComplete
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PaywayInfo\obj\Debug\CS.Img.PaywayInfo.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.PaywayInfo\obj\Debug\CS.Img.PaywayInfo.pdb

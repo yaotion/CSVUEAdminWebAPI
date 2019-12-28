@@ -1,0 +1,9 @@
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\obj\Debug\CS.Img.Deposit.csprojAssemblyReference.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\obj\Debug\CS.Img.Deposit.csproj.CoreCompileInputs.cache
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Deposit.dll.config
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Deposit.xml
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Deposit.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.WebAPI\bin\CS.Img.Deposit.pdb
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\obj\Debug\CS.Img.Deposit.csproj.CopyComplete
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\obj\Debug\CS.Img.Deposit.dll
+E:\工作\yaotion\WebAPI\MVC4WebAPI\CS.Img.Deposit\obj\Debug\CS.Img.Deposit.pdb

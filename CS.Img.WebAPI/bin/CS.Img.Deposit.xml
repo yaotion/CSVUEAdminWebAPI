@@ -1,0 +1,457 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Deposit</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Deposit.DepositController">
+            <summary>
+            储值赠送信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取储值赠送活动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.AddAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            添加储值赠送信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.UpdateAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            修改储值赠送信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.DeleleAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            删除储值赠送信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.GetDepositContentList(System.Int32)">
+            <summary>
+            获取储值赠送活动内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.AddContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            添加储值赠送活动内容信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.UpdateContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            修改储值赠送活动内容信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositController.DeleteContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            添加储值赠送活动内容信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Deposit.DepositAct">
+            <summary>
+            储值赠送活动信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositAct.Id">
+            <summary>
+            活动编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositAct.ActName">
+            <summary>
+            活动名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositAct.Flag">
+            <summary>
+            启用标志 0:启用，!=0禁用
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositAct.StartTm">
+            <summary>
+            开始时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositAct.EndTm">
+            <summary>
+            结束时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositAct.Level">
+            <summary>
+            等级
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositAct.Createtime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:CS.Img.Deposit.DepositContent">
+            <summary>
+            储值赠送活动内容
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.Id">
+            <summary>
+            活动内容编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.ActID">
+            <summary>
+            所属活动编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.DepositMin">
+            <summary>
+            最小金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.DepositMax">
+            <summary>
+            最大金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.DepositBonus">
+            <summary>
+            优惠金额，比例时为小数
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.BonusType">
+            <summary>
+            优惠类型，1未按比例，0为固定金额
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.AccNo">
+            <summary>
+            优惠对象:单位编号，散户时为0000
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.AccName">
+            <summary>
+            客户名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.RetailTypeName">
+            <summary>
+            散户类型名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.Flag">
+            <summary>
+            标志1为启用，0位禁用
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.RetailTypeID">
+            <summary>
+            优惠对象：散户类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.OilCode">
+            <summary>
+             限制油品编号 以|分隔符分割 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.StationLst">
+            <summary>
+            限制油站编号 以|分隔符分割 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Deposit.DepositContent.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:CS.Img.Deposit.DepositRepository">
+            <summary>
+            储值赠送信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.AddAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.UpdateAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.DeleteAct(System.Int32)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.GetDepositContentList(System.Int32)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.AddContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.UpdateContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.DeleteContent(System.Int32)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="contentID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositRepository.DeleteActContent(System.Int32)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="T:CS.Img.Deposit.IDepositRepository">
+            <summary>
+            储值赠送信息Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.AddAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.UpdateAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.DeleteAct(System.Int32)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.GetDepositContentList(System.Int32)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.AddContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.UpdateContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.DeleteContent(System.Int32)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="contentID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.IDepositRepository.DeleteActContent(System.Int32)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="T:CS.Img.Deposit.DepositApp">
+            <summary>
+            储值赠送信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.#ctor(CS.Img.Deposit.IDepositService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.AddAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.UpdateAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.DeleteAct(System.Int32)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.GetDepositContentList(System.Int32)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.AddContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.UpdateContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.DeleteContent(System.Int32)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="contentID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositApp.DeleteActContent(System.Int32)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="T:CS.Img.Deposit.IDepositApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.Deposit.DepositService">
+            <summary>
+            储值赠送信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.#ctor(CS.Img.Deposit.IDepositRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.AddAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.UpdateAct(CS.Img.Deposit.DepositAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.DeleteAct(System.Int32)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.GetDepositContentList(System.Int32)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.AddContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.UpdateContent(CS.Img.Deposit.DepositContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.DeleteContent(System.Int32)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="contentID"></param>
+        </member>
+        <member name="M:CS.Img.Deposit.DepositService.DeleteActContent(System.Int32)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="T:CS.Img.Deposit.IDepositService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+    </members>
+</doc>

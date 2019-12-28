@@ -27,5 +27,51 @@ namespace CS.Img.Base
          /// </summary>
          /// <returns></returns>
          List<RetailType> GetRetailTypeList();
+
+        /// <summary>
+        /// 获取优惠类型列表
+        /// </summary>
+        /// <returns></returns>
+        List<preType> GetPreIdList();
+        /// <summary>
+        /// 获取支付方式列表
+        /// </summary>
+        /// <returns></returns>
+        List<PayWay> GetPayWayList();
+        /// <summary>
+        /// 获取班号
+        /// </summary>
+        /// <returns></returns>
+        List<ShiftNo> GetShiftNoList(string stationNo, string bussDate);
+        /// <summary>
+        /// 获取油品信息
+        /// </summary>
+        /// <returns></returns>
+        List<OilInfo> GetOilInfoList();
+        /// <summary>
+        /// 获取油枪信息
+        /// </summary>
+        /// <returns></returns>
+        List<TerminalInfo> GetTerminalInfoList(string stationNo);
+        /// <summary>
+        /// 获取交易类型
+        /// </summary>
+        /// <returns></returns>
+        List<TradeTypeInfo> GetTradeTypeInfoList();
+        /// <summary>
+        /// 获取卡类型
+        /// </summary>
+        /// <returns></returns>
+        List<CardTypeInfo> GetCardTypeInfoList();
+        /// <summary>
+        /// 油站员工信息
+        /// </summary>
+        /// <returns></returns>
+        List<Employee> GetEmployeeList(string stationNo);
+     
+
+
     }
+
+
 }

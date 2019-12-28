@@ -18,6 +18,7 @@ namespace CS.Img.WebAPI
             {
                 DateTimeFormat = "yyyy'-'MM'-'dd' 'HH':'mm':'ss"
             });
+
             var dx = new EnableCorsAttribute("*", "*", "*");
             dx.SupportsCredentials = true;
             //跨域配置

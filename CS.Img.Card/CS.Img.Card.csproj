@@ -64,7 +64,7 @@
     <Compile Include="AppService\ICardApp.cs" />
     <Compile Include="Controllers\CardController.cs" />
     <Compile Include="Data\CardData.cs" />
-    <Compile Include="Data\CardRepository.cs" />
+    <Compile Include="Domain\CardRepository.cs" />
     <Compile Include="Data\ICardRepository.cs" />
     <Compile Include="Domain\CardService.cs" />
     <Compile Include="Domain\ICardService.cs" />

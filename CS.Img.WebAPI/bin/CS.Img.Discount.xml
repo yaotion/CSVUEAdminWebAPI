@@ -1,0 +1,506 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.Discount</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.Discount.DiscountController">
+            <summary>
+            明折明扣信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取明折明扣活动
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.AddAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            添加明折明扣信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.UpdateAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            修改明折明扣信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.DeleleAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            修改明折明扣信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.GetDiscountContentList(System.String)">
+            <summary>
+            获取明折明扣活动内容
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.AddContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            添加明折明扣活动内容信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.UpdateContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            修改明折明扣活动内容信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.DeleteContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            添加明折明扣活动内容信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountController.GetActLogList(System.String)">
+            <summary>
+            获取明折明扣日志
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Discount.DiscountAct">
+            <summary>
+            明折明扣活动信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountAct.ActID">
+            <summary>
+            活动编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountAct.ActName">
+            <summary>
+            活动姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountAct.ActStartTime">
+            <summary>
+            级别
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountAct.ActEndTime">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:CS.Img.Discount.DiscountActLog">
+            <summary>
+            明折明扣活动操作日志信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.LogId">
+            <summary>
+            日志编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.LogType">
+            <summary>
+            日志类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.LogTime">
+            <summary>
+            日志时间
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.OptID">
+            <summary>
+            操作员编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.OptName">
+            <summary>
+            操作员名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.ActID">
+            <summary>
+            活动编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.ActName">
+            <summary>
+            活动姓名
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.ActStartTime">
+            <summary>
+            级别
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountActLog.ActEndTime">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="T:CS.Img.Discount.DiscountContent">
+            <summary>
+            明折明扣活动内容
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.DisID">
+            <summary>
+            活动内容编号 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.ActID">
+            <summary>
+            所属活动编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.StationID">
+            <summary>
+            限制油站编号 以|分隔符分割 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.StationName">
+            <summary>
+            限制油站名称 以|分隔符分割 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.DisObjectID">
+            <summary>
+            优惠对象编号 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.DisObjectName">
+            <summary>
+            优惠对象名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.DisObjectType">
+            <summary>
+            优惠对象类型(散户、单位客户、限制积分卡账户)
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.OilCode">
+            <summary>
+             限制油品编号 以|分隔符分割 
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.DCTMoney">
+            <summary>
+            优惠力度
+            </summary>
+        </member>
+        <member name="P:CS.Img.Discount.DiscountContent.ValidMinVol">
+            <summary>
+            最小升数
+            </summary>
+        </member>
+        <member name="T:CS.Img.Discount.DiscountRepository">
+            <summary>
+            明折明扣信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.AddAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.UpdateAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.DeleteAct(System.String)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.GetDiscountContentList(System.String)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.AddContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.UpdateContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.DeleteContent(System.String)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="disID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.DeleteActContent(System.String)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountRepository.GetActLogList(System.String)">
+            <summary>
+            获取活动日志
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Discount.IDiscountRepository">
+            <summary>
+            明折明扣信息Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.AddAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.UpdateAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.DeleteAct(System.String)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.GetDiscountContentList(System.String)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.AddContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.UpdateContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.DeleteContent(System.String)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="disID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.DeleteActContent(System.String)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.IDiscountRepository.GetActLogList(System.String)">
+            <summary>
+            获取活动日志
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.Discount.DiscountApp">
+            <summary>
+            明折明扣信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.#ctor(CS.Img.Discount.IDiscountService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.GetActLogList(System.String)">
+            <summary>
+            获取活动日志
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.GetDiscountContentList(System.String)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.AddAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.UpdateAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.DeleteAct(System.String)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.AddContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.UpdateContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.DeleteContent(System.String)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="disID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountApp.DeleteActContent(System.String)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="T:CS.Img.Discount.IDiscountApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.Discount.DiscountService">
+            <summary>
+            明折明扣信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.#ctor(CS.Img.Discount.IDiscountRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.GetActList(System.String,System.String,System.String)">
+            <summary>
+            获取活动列表
+            </summary>
+            <param name="beginTime"></param>
+            <param name="endTime"></param>
+            <param name="actName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.GetActLogList(System.String)">
+            <summary>
+            获取活动日志
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.GetDiscountContentList(System.String)">
+            <summary>
+            获取指定活动的 活动内容
+            </summary>
+            <param name="actID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.AddAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            添加活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.UpdateAct(CS.Img.Discount.DiscountAct)">
+            <summary>
+            修改活动
+            </summary>
+            <param name="act"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.DeleteAct(System.String)">
+            <summary>
+            删除活动
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.AddContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            添加活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.UpdateContent(CS.Img.Discount.DiscountContent)">
+            <summary>
+            修改活动内容
+            </summary>
+            <param name="content"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.DeleteContent(System.String)">
+            <summary>
+            删除指定内容
+            </summary>
+            <param name="disID"></param>
+        </member>
+        <member name="M:CS.Img.Discount.DiscountService.DeleteActContent(System.String)">
+            <summary>
+            删除活动内容
+            </summary>
+            <param name="actID"></param>
+        </member>
+        <member name="T:CS.Img.Discount.IDiscountService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+    </members>
+</doc>

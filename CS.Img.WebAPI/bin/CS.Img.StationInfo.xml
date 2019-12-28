@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CS.Img.StationInfo</name>
+    </assembly>
+    <members>
+        <member name="T:CS.Img.StationInfo.StationInfoController">
+            <summary>
+            站点信息控制器
+            </summary>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoController.GetStationInfoList(System.Int32,System.String)">
+            <summary>
+            获取油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoController.UpdateStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            修改油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoController.DeleteStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            删除油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoController.AddStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            删除油站信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoController.InitStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            初始化占站点
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:CS.Img.StationInfo.IStationInfoRepository">
+            <summary>
+            站点信息Repository接口
+            </summary>
+        </member>
+        <member name="M:CS.Img.StationInfo.IStationInfoRepository.GetStationInfoList(System.Int32,System.String)">
+            <summary>
+            获取油站信息
+            </summary>
+            <param name="stationType"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.IStationInfoRepository.UpdateStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            修改站点信息
+            </summary>
+            <param name="stationInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.IStationInfoRepository.DeleteStationInfo(System.String)">
+            <summary>
+            删除站点信息
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.IStationInfoRepository.AddStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            添加站点信息
+            </summary>
+            <param name="stationInfo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.IStationInfoRepository.InitStationInfo(System.String)">
+            <summary>
+            初始化站点
+            </summary>
+            <param name="stationInfo"></param>
+        </member>
+        <member name="T:CS.Img.StationInfo.StationType">
+            <summary>
+            站点类型
+            </summary>
+        </member>
+        <member name="F:CS.Img.StationInfo.StationType.steOil">
+            <summary>
+            油站
+            </summary>
+        </member>
+        <member name="F:CS.Img.StationInfo.StationType.steSale">
+            <summary>
+            发卡点
+            </summary>
+        </member>
+        <member name="T:CS.Img.StationInfo.StationInfo">
+            <summary>
+            站点基础信息
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.StationNo">
+            <summary>
+            站点编号
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.StationName">
+            <summary>
+            站点名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.SecCode">
+            <summary>
+            注册密码
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.BriefName">
+            <summary>
+            简称
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.Master">
+            <summary>
+            站点负责人
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.TelNo">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.TaxCode">
+            <summary>
+            税号
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.TaxRate">
+            <summary>
+            税率
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.BankName">
+            <summary>
+            开户行名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.BankAccNo">
+            <summary>
+            开户行账号
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.Address">
+            <summary>
+            油站地址
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.StationType">
+            <summary>
+            油站类型
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.StationTypeName">
+            <summary>
+            油站类型名称
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.Memo">
+            <summary>
+            备注
+            </summary>
+        </member>
+        <member name="P:CS.Img.StationInfo.StationInfo.LastTransTime">
+            <summary>
+            最近传输时间
+            </summary>
+        </member>
+        <member name="T:CS.Img.StationInfo.StationInfoRepository">
+            <summary>
+            站点信息Repository实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoRepository.#ctor(CS.Img.Utils.CSDBContext)">
+            <summary>
+            构造 函数
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoRepository.GetStationInfoList(System.Int32,System.String)">
+            <summary>
+            获取油站信息
+            </summary>
+            <param name="stationType"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoRepository.UpdateStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            修改站点信息
+            </summary>
+            <param name="stationInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoRepository.DeleteStationInfo(System.String)">
+            <summary>
+            删除站点信息
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoRepository.AddStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            添加站点信息
+            </summary>
+            <param name="stationInfo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoRepository.InitStationInfo(System.String)">
+            <summary>
+            初始化站点
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+        <member name="T:CS.Img.StationInfo.IStationInfoApp">
+            <summary>
+            站点信息App接口
+            </summary>
+        </member>
+        <member name="T:CS.Img.StationInfo.StationInfoApp">
+            <summary>
+            站点信息App接口实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoApp.#ctor(CS.Img.StationInfo.IStationInfoService,CS.Img.Utils.CSUoWFactory)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="service"></param>
+            <param name="uoWFactory"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoApp.GetStationInfoList(System.Int32,System.String)">
+            <summary>
+            获取油站信息
+            </summary>
+            <param name="stationType"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoApp.UpdateStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            修改站点信息
+            </summary>
+            <param name="stationInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoApp.DeleteStationInfo(System.String)">
+            <summary>
+            删除站点信息
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoApp.AddStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            添加站点信息
+            </summary>
+            <param name="stationInfo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoApp.InitStationInfo(System.String)">
+            <summary>
+            初始化站点
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+        <member name="T:CS.Img.StationInfo.IStationInfoService">
+            <summary>
+            站点信息Service
+            </summary>
+        </member>
+        <member name="T:CS.Img.StationInfo.StationInfoService">
+            <summary>
+            站点信息Service实现
+            </summary>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoService.#ctor(CS.Img.StationInfo.IStationInfoRepository)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoService.GetStationInfoList(System.Int32,System.String)">
+            <summary>
+            获取油站信息
+            </summary>
+            <param name="stationType"></param>
+            <param name="stationNo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoService.UpdateStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            修改站点信息
+            </summary>
+            <param name="stationInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoService.DeleteStationInfo(System.String)">
+            <summary>
+            删除站点信息
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoService.AddStationInfo(CS.Img.StationInfo.StationInfo)">
+            <summary>
+            添加站点信息
+            </summary>
+            <param name="stationInfo"></param>
+        </member>
+        <member name="M:CS.Img.StationInfo.StationInfoService.InitStationInfo(System.String)">
+            <summary>
+            初始化站点
+            </summary>
+            <param name="stationNo"></param>
+        </member>
+    </members>
+</doc>
